@@ -1,1 +1,11 @@
-Custom library
+Symfony2
+
+# add to app/autoload.php
+'Custom'           => __DIR__.'/../vendor/custom/lib'
+
+# In Controller
+use Custom\Url;
+
+echo Url::Slugify('test test');
+
+output: test-test
