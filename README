@@ -1,4 +1,8 @@
-Symfony2
+# In Symfony2
+
+# deps
+[custom]
+    git=https://github.com/romainbureau/Custom.git
 
 # add to app/autoload.php
 'Custom'           => __DIR__.'/../vendor/custom/lib'
