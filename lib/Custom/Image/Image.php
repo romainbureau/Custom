@@ -28,4 +28,8 @@ class Image {
             $treatment->process($this->_image);
         }
     }
+
+    public function __destruct() {
+        $this->_image->destroy();
+    }
 }

@@ -11,6 +11,5 @@ class Write {
 
     public function process(\Imagick $image) {
         $image->writeImage($this->_write_to);
-        $image->destroy();
     }
 }
