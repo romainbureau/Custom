@@ -29,6 +29,10 @@ class Image {
         }
     }
 
+    public function get() {
+        return $this->_image;
+    }
+        
     public function __destruct() {
         $this->_image->destroy();
     }
