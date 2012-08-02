@@ -46,12 +46,13 @@ class Curl extends BaseRequest implements ProviderInterface {
     }
 
     public function before() {
-        self::$_curl = curl_init($this->_url); 
+        self::$_curl = curl_init(); 
         $this->setOptions();
     }
 
 
     public function run() {
+        curl_setopt(self::$_curl, CURLOPT_URL, $this->_url);
         curl_setopt_array(self::$_curl, $this->_options);
         $this->_result = curl_exec(self::$_curl);
     }
