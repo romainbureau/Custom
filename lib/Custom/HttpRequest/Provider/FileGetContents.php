@@ -6,11 +6,11 @@ use Custom\HttpRequest\BaseRequest;
 use Custom\HttpRequest\ProviderInterface;
 
 class FileGetContents extends BaseRequest implements ProviderInterface {
-    
+
     private $_context;
 
     public function before() {
-        $context = array(
+        $this->_context = array(
             'http' => array(
                 'method'  => $this->_method,
             )
@@ -19,10 +19,8 @@ class FileGetContents extends BaseRequest implements ProviderInterface {
         $headers = array();
         $methods = array('POST', 'PUT');
         if(in_array($this->_method, $methods) && $this->_data) {
-            $context['http']['content'] = $this->_data;
+            $this->_context['http']['content'] = $this->_data;
         }
-
-        $this->_context = $context;
     }
 
     public function mergeHeaders(array $array) {
@@ -30,13 +28,17 @@ class FileGetContents extends BaseRequest implements ProviderInterface {
     }
 
     public function run() {
-        $context['http']['header'] = $this->_headers;
 
-        $this->_context = array_merge($this->_context, $context);
+        $headers = array();
+        foreach($this->_headers as $header => $value) {
+            $headers[] = $header.': '.$value;
+        }
 
-        if($this->_context) 
+        $this->_context['http']['header'] = $headers;
+
+        if($this->_context) {
             $this->_result = file_get_contents($this->_url, false, stream_context_create($this->_context));
-        else
+        } else
             $this->_result = file_get_contents($this->_url); 
     }
 
