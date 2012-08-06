@@ -23,7 +23,7 @@ class Request {
         $this->_request->setMethod($method);
     }
 
-    public function setData($data = array()) {
+    public function setData($data) {
         $this->_request->setData($data);
     }
 

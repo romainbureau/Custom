@@ -16,7 +16,6 @@ class FileGetContents extends BaseRequest implements ProviderInterface {
             )
         );
 
-        $headers = array();
         $methods = array('POST', 'PUT');
         if(in_array($this->_method, $methods) && $this->_data) {
             $this->_context['http']['content'] = $this->_data;
@@ -37,7 +36,8 @@ class FileGetContents extends BaseRequest implements ProviderInterface {
         $this->_context['http']['header'] = $headers;
 
         if($this->_context) {
-            $this->_result = file_get_contents($this->_url, false, stream_context_create($this->_context));
+            $context = stream_context_create($this->_context);
+            $this->_result = file_get_contents($this->_url, false, $context);
         } else
             $this->_result = file_get_contents($this->_url); 
     }
