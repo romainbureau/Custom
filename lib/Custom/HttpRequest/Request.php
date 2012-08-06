@@ -6,9 +6,6 @@ use Custom\HttpRequest\Auth\AuthInterface;
 
 class Request {
 
-    protected $_data;
-    private $_result   = null;
-
     public function __construct(ProviderInterface $request, AuthInterface $auth = null) {
         $this->_request = $request;
         $this->_auth = $auth;
