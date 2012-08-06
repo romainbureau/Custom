@@ -38,8 +38,9 @@ class FileGetContents extends BaseRequest implements ProviderInterface {
         if($this->_context) {
             $context = stream_context_create($this->_context);
             $this->_result = file_get_contents($this->_url, false, $context);
-        } else
-            $this->_result = file_get_contents($this->_url); 
+        } else {
+            $this->_result = file_get_contents($this->_url);
+        }
     }
 
 }
