@@ -32,6 +32,8 @@ class FileGetContents extends BaseRequest implements ProviderInterface {
     public function run() {
         $context['http']['header'] = $this->_headers;
 
+        $this->_context = array_merge($this->_context, $context);
+
         if($this->_context) 
             $this->_result = file_get_contents($this->_url, false, stream_context_create($this->_context));
         else
