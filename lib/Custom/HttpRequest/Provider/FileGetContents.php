@@ -22,12 +22,7 @@ class FileGetContents extends BaseRequest implements ProviderInterface {
         }
     }
 
-    public function mergeHeaders(array $array) {
-        $this->_headers = array_merge($this->_headers, $array);
-    }
-
     public function run() {
-
         $headers = array();
         foreach($this->_headers as $header => $value) {
             $headers[] = $header.': '.$value;

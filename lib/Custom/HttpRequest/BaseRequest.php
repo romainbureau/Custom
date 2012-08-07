@@ -52,4 +52,9 @@ abstract class BaseRequest {
     public function after() {
     }
 
+    public function mergeHeaders(array $array) {
+        foreach($array as $header => $value) {
+            $this->_headers[$header] = $value;
+        }
+    }
 }

@@ -19,19 +19,7 @@ class HttpBasic implements AuthInterface {
     }
 
     public function set(ProviderInterface $request) {
-        if($request instanceof Curl) {
-
-            $options = array();
-            $options[CURLOPT_USERPWD] = $this->_auth;
-            $options[CURLOPT_HTTPAUTH] = CURLAUTH_BASIC;
-            $request->mergeOptions($options);
-
-        } else if($request instanceof FileGetContents) {
-
-            $header = array('Authorization: Basic '.$this->_auth);
-            $request->mergeHeaders($header);
-
-        }
+        $header = array('Authorization' => 'Basic '.$this->_auth);
+        $request->mergeHeaders($header);
     }
-
 }

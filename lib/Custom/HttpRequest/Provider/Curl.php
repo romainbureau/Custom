@@ -12,7 +12,6 @@ class Curl extends BaseRequest implements ProviderInterface {
 
     public function setOptions() {
         $options = array(
-            CURLOPT_HTTPHEADER => $this->_headers,
             CURLOPT_HEADER => false,
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_FOLLOWLOCATION => true,
@@ -41,19 +40,21 @@ class Curl extends BaseRequest implements ProviderInterface {
         $this->_options = $options;
     }
 
-    public function mergeOptions(array $array = array()) {
-        $this->_options = array_merge($this->_options, $array);
-    }
-
     public function before() {
         self::$_curl = curl_init(); 
         $this->setOptions();
     }
 
-
     public function run() {
+        $headers = array();
+        foreach($this->_headers as $header => $value) {
+            $headers[] = $header.': '.$value;
+        }
+
         curl_setopt(self::$_curl, CURLOPT_URL, $this->_url);
+        curl_setopt(self::$_curl, CURLOPT_HTTPHEADER, $headers);
         curl_setopt_array(self::$_curl, $this->_options);
+
         $this->_result = curl_exec(self::$_curl);
     }
 
