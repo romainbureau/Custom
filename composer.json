@@ -2,7 +2,7 @@
     "name": "custom/custom",
     "type": "library",
     "description": "My Custom lib for testing or playing :)",
-    "keywords": ["odm"],
+    "keywords": ["library"],
     "homepage": "https://github.com/romainbureau/Custom",
     "license": "MIT",
     "authors": [
