@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pmd version="1.3.3" timestamp="2012-08-21T09:20:59+02:00">
+  <file name="/home/hio/www/Custom/lib/Custom/AlphaId.php">
+    <violation beginline="21" endline="81" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Custom" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="AlphaId" method="encode" priority="3">
+      The method encode() has a Cyclomatic Complexity of 12. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="21" endline="81" rule="NPathComplexity" ruleset="Code Size Rules" package="Custom" externalInfoUrl="http://phpmd.org/rules/codesize.html#npathcomplexity" class="AlphaId" method="encode" priority="3">
+      The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
+    </violation>
+    <violation beginline="21" endline="21" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $in. Configured minimum length is 3.
+    </violation>
+    <violation beginline="30" endline="30" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $i. Configured minimum length is 3.
+    </violation>
+    <violation beginline="37" endline="37" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $p. Configured minimum length is 3.
+    </violation>
+    <violation beginline="74" endline="74" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $a. Configured minimum length is 3.
+    </violation>
+  </file>
+  <file name="/home/hio/www/Custom/lib/Custom/HttpRequest/Auth/Hmac.php">
+    <violation beginline="21" endline="21" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $ts. Configured minimum length is 3.
+    </violation>
+  </file>
+  <file name="/home/hio/www/Custom/lib/Custom/HttpRequest/Provider/Curl.php">
+    <violation beginline="11" endline="11" rule="UnusedPrivateField" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedprivatefield" priority="3">
+      Avoid unused private fields such as '$options'.
+    </violation>
+  </file>
+  <file name="/home/hio/www/Custom/lib/Custom/HttpRequest/Request.php">
+    <violation beginline="30" endline="39" rule="ConstructorWithNameAsEnclosingClass" ruleset="Naming Rules" package="Custom\HttpRequest" externalInfoUrl="http://phpmd.org/rules/naming.html#constructorwithnameasenclosingclass" class="Request" method="request" priority="3">
+      Classes should not have a constructor method with the same name as the class
+    </violation>
+  </file>
+  <file name="/home/hio/www/Custom/lib/Custom/Image/FixOrientation.php">
+    <violation beginline="25" endline="48" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Custom\Image" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="FixOrientation" method="process" priority="3">
+      The method process() has a Cyclomatic Complexity of 12. The configured cyclomatic complexity threshold is 10.
+    </violation>
+  </file>
+</pmd>
