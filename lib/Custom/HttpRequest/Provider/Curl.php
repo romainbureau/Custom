@@ -8,7 +8,7 @@ use Custom\HttpRequest\ProviderInterface;
 class Curl extends BaseRequest implements ProviderInterface
 {
     private static $_curl;
-    private $options = array();
+    private $_options = array();
 
     public function setOptions()
     {

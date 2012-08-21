@@ -35,48 +35,18 @@
                             &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
                             &lt;div class="text"&gt;Missing class doc comment&lt;/div&gt;
                         &lt;/div&gt;
-                        
-                        &lt;div class="tooltip"&gt;
-                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
-                            &lt;div class="text"&gt;Opening brace of a class must be on the line after the definition&lt;/div&gt;
-                        &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">&nbsp;8&nbsp;</span><span class="keyword">class&nbsp;</span><span class="default">FileGetContents&nbsp;</span><span class="keyword">extends&nbsp;</span><span class="default">BaseRequest&nbsp;</span><span class="keyword">implements&nbsp;</span><span class="default">ProviderInterface&nbsp;</span><span class="keyword">{</span><a name="line_8"></a></li><li id="line_9" class="odd"><span class="lineNumber">&nbsp;9&nbsp;</span><a name="line_9"></a></li><li id="line_10" class="even"><span class="lineNumber">10&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;private&nbsp;</span><span class="default">$_context</span><span class="keyword">;</span><a name="line_10"></a></li><li id="line_11" class="odd"><span class="lineNumber">11&nbsp;</span><a name="line_11"></a></li><li id="line_12" title='|
+                        ' class="even hasIssues Checkstyle"><span class="lineNumber">&nbsp;8&nbsp;</span><span class="keyword">class&nbsp;</span><span class="default">FileGetContents&nbsp;</span><span class="keyword">extends&nbsp;</span><span class="default">BaseRequest&nbsp;</span><span class="keyword">implements&nbsp;</span><span class="default">ProviderInterface</span><a name="line_8"></a></li><li id="line_9" class="odd"><span class="lineNumber">&nbsp;9&nbsp;</span><span class="keyword">{</span><a name="line_9"></a></li><li id="line_10" class="even"><span class="lineNumber">10&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;private&nbsp;</span><span class="default">$_context</span><span class="keyword">;</span><a name="line_10"></a></li><li id="line_11" class="odd"><span class="lineNumber">11&nbsp;</span><a name="line_11"></a></li><li id="line_12" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
                             &lt;div class="text"&gt;Missing function doc comment&lt;/div&gt;
                         &lt;/div&gt;
-                        
-                        &lt;div class="tooltip"&gt;
-                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
-                            &lt;div class="text"&gt;Opening brace should be on a new line&lt;/div&gt;
-                        &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">12&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span class="default">before</span><span class="keyword">()&nbsp;{</span><a name="line_12"></a></li><li id="line_13" class="odd"><span class="lineNumber">13&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_context&nbsp;</span><span class="keyword">=&nbsp;array(</span><a name="line_13"></a></li><li id="line_14" class="even"><span class="lineNumber">14&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">'http'&nbsp;</span><span class="keyword">=&gt;&nbsp;array(</span><a name="line_14"></a></li><li id="line_15" class="odd"><span class="lineNumber">15&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">'method'&nbsp;&nbsp;</span><span class="keyword">=&gt;&nbsp;</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_method</span><span class="keyword">,</span><a name="line_15"></a></li><li id="line_16" class="even"><span class="lineNumber">16&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)</span><a name="line_16"></a></li><li id="line_17" class="odd"><span class="lineNumber">17&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);</span><a name="line_17"></a></li><li id="line_18" class="even"><span class="lineNumber">18&nbsp;</span><a name="line_18"></a></li><li id="line_19" class="odd"><span class="lineNumber">19&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$methods&nbsp;</span><span class="keyword">=&nbsp;array(</span><span class="string">'POST'</span><span class="keyword">,&nbsp;</span><span class="string">'PUT'</span><span class="keyword">);</span><a name="line_19"></a></li><li id="line_20" title='|
-                        &lt;div class="tooltip"&gt;
-                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
-                            &lt;div class="text"&gt;Expected &amp;quot;if (...) {\n&amp;quot;; found &amp;quot;if(...) {\n&amp;quot;&lt;/div&gt;
-                        &lt;/div&gt;
-                        ' class="even hasIssues Checkstyle"><span class="lineNumber">20&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span class="default">in_array</span><span class="keyword">(</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_method</span><span class="keyword">,&nbsp;</span><span class="default">$methods</span><span class="keyword">)&nbsp;&amp;&amp;&nbsp;</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_data</span><span class="keyword">)&nbsp;{</span><a name="line_20"></a></li><li id="line_21" class="odd"><span class="lineNumber">21&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_context</span><span class="keyword">[</span><span class="string">'http'</span><span class="keyword">][</span><span class="string">'content'</span><span class="keyword">]&nbsp;=&nbsp;</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_data</span><span class="keyword">;</span><a name="line_21"></a></li><li id="line_22" class="even"><span class="lineNumber">22&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_22"></a></li><li id="line_23" class="odd"><span class="lineNumber">23&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_23"></a></li><li id="line_24" class="even"><span class="lineNumber">24&nbsp;</span><a name="line_24"></a></li><li id="line_25" title='|
+                        ' class="even hasIssues Checkstyle"><span class="lineNumber">12&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span class="default">before</span><span class="keyword">()</span><a name="line_12"></a></li><li id="line_13" class="odd"><span class="lineNumber">13&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;{</span><a name="line_13"></a></li><li id="line_14" class="even"><span class="lineNumber">14&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_context&nbsp;</span><span class="keyword">=&nbsp;array(</span><a name="line_14"></a></li><li id="line_15" class="odd"><span class="lineNumber">15&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">'http'&nbsp;</span><span class="keyword">=&gt;&nbsp;array(</span><a name="line_15"></a></li><li id="line_16" class="even"><span class="lineNumber">16&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">'method'&nbsp;&nbsp;</span><span class="keyword">=&gt;&nbsp;</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_method</span><span class="keyword">,</span><a name="line_16"></a></li><li id="line_17" class="odd"><span class="lineNumber">17&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)</span><a name="line_17"></a></li><li id="line_18" class="even"><span class="lineNumber">18&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);</span><a name="line_18"></a></li><li id="line_19" class="odd"><span class="lineNumber">19&nbsp;</span><a name="line_19"></a></li><li id="line_20" class="even"><span class="lineNumber">20&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$methods&nbsp;</span><span class="keyword">=&nbsp;array(</span><span class="string">'POST'</span><span class="keyword">,&nbsp;</span><span class="string">'PUT'</span><span class="keyword">);</span><a name="line_20"></a></li><li id="line_21" class="odd"><span class="lineNumber">21&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span class="default">in_array</span><span class="keyword">(</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_method</span><span class="keyword">,&nbsp;</span><span class="default">$methods</span><span class="keyword">)&nbsp;&amp;&amp;&nbsp;</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_data</span><span class="keyword">)&nbsp;{</span><a name="line_21"></a></li><li id="line_22" class="even"><span class="lineNumber">22&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_context</span><span class="keyword">[</span><span class="string">'http'</span><span class="keyword">][</span><span class="string">'content'</span><span class="keyword">]&nbsp;=&nbsp;</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_data</span><span class="keyword">;</span><a name="line_22"></a></li><li id="line_23" class="odd"><span class="lineNumber">23&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_23"></a></li><li id="line_24" class="even"><span class="lineNumber">24&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_24"></a></li><li id="line_25" class="odd"><span class="lineNumber">25&nbsp;</span><a name="line_25"></a></li><li id="line_26" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
                             &lt;div class="text"&gt;Missing function doc comment&lt;/div&gt;
                         &lt;/div&gt;
-                        
-                        &lt;div class="tooltip"&gt;
-                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
-                            &lt;div class="text"&gt;Opening brace should be on a new line&lt;/div&gt;
-                        &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">25&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span class="default">run</span><span class="keyword">()&nbsp;{</span><a name="line_25"></a></li><li id="line_26" class="even"><span class="lineNumber">26&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$headers&nbsp;</span><span class="keyword">=&nbsp;array();</span><a name="line_26"></a></li><li id="line_27" title='|
-                        &lt;div class="tooltip"&gt;
-                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
-                            &lt;div class="text"&gt;Expected &amp;quot;foreach (...) {\n&amp;quot;; found &amp;quot;foreach(...) {\n&amp;quot;&lt;/div&gt;
-                        &lt;/div&gt;
-                        ' class="odd hasIssues Checkstyle"><span class="lineNumber">27&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach(</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_headers&nbsp;</span><span class="keyword">as&nbsp;</span><span class="default">$header&nbsp;</span><span class="keyword">=&gt;&nbsp;</span><span class="default">$value</span><span class="keyword">)&nbsp;{</span><a name="line_27"></a></li><li id="line_28" class="even"><span class="lineNumber">28&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$headers</span><span class="keyword">[]&nbsp;=&nbsp;</span><span class="default">$header</span><span class="keyword">.</span><span class="string">':&nbsp;'</span><span class="keyword">.</span><span class="default">$value</span><span class="keyword">;</span><a name="line_28"></a></li><li id="line_29" class="odd"><span class="lineNumber">29&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_29"></a></li><li id="line_30" class="even"><span class="lineNumber">30&nbsp;</span><a name="line_30"></a></li><li id="line_31" class="odd"><span class="lineNumber">31&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_context</span><span class="keyword">[</span><span class="string">'http'</span><span class="keyword">][</span><span class="string">'header'</span><span class="keyword">]&nbsp;=&nbsp;</span><span class="default">$headers</span><span class="keyword">;</span><a name="line_31"></a></li><li id="line_32" class="even"><span class="lineNumber">32&nbsp;</span><a name="line_32"></a></li><li id="line_33" title='|
-                        &lt;div class="tooltip"&gt;
-                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
-                            &lt;div class="text"&gt;Expected &amp;quot;if (...) {\n&amp;quot;; found &amp;quot;if(...) {\n&amp;quot;&lt;/div&gt;
-                        &lt;/div&gt;
-                        ' class="odd hasIssues Checkstyle"><span class="lineNumber">33&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_context</span><span class="keyword">)&nbsp;{</span><a name="line_33"></a></li><li id="line_34" class="even"><span class="lineNumber">34&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$context&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">stream_context_create</span><span class="keyword">(</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_context</span><span class="keyword">);</span><a name="line_34"></a></li><li id="line_35" class="odd"><span class="lineNumber">35&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_result&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">file_get_contents</span><span class="keyword">(</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_url</span><span class="keyword">,&nbsp;</span><span class="default">false</span><span class="keyword">,&nbsp;</span><span class="default">$context</span><span class="keyword">);</span><a name="line_35"></a></li><li id="line_36" class="even"><span class="lineNumber">36&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{</span><a name="line_36"></a></li><li id="line_37" class="odd"><span class="lineNumber">37&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_result&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">file_get_contents</span><span class="keyword">(</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_url</span><span class="keyword">);</span><a name="line_37"></a></li><li id="line_38" class="even"><span class="lineNumber">38&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_38"></a></li><li id="line_39" class="odd"><span class="lineNumber">39&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_39"></a></li><li id="line_40" class="even"><span class="lineNumber">40&nbsp;</span><a name="line_40"></a></li><li id="line_41" class="odd"><span class="lineNumber">41&nbsp;</span><span class="keyword">}</span><span>
-</span><a name="line_41"></a></li></ol>
+                        ' class="even hasIssues Checkstyle"><span class="lineNumber">26&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span class="default">run</span><span class="keyword">()</span><a name="line_26"></a></li><li id="line_27" class="odd"><span class="lineNumber">27&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;{</span><a name="line_27"></a></li><li id="line_28" class="even"><span class="lineNumber">28&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$headers&nbsp;</span><span class="keyword">=&nbsp;array();</span><a name="line_28"></a></li><li id="line_29" class="odd"><span class="lineNumber">29&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_headers&nbsp;</span><span class="keyword">as&nbsp;</span><span class="default">$header&nbsp;</span><span class="keyword">=&gt;&nbsp;</span><span class="default">$value</span><span class="keyword">)&nbsp;{</span><a name="line_29"></a></li><li id="line_30" class="even"><span class="lineNumber">30&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$headers</span><span class="keyword">[]&nbsp;=&nbsp;</span><span class="default">$header</span><span class="keyword">.</span><span class="string">':&nbsp;'</span><span class="keyword">.</span><span class="default">$value</span><span class="keyword">;</span><a name="line_30"></a></li><li id="line_31" class="odd"><span class="lineNumber">31&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_31"></a></li><li id="line_32" class="even"><span class="lineNumber">32&nbsp;</span><a name="line_32"></a></li><li id="line_33" class="odd"><span class="lineNumber">33&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_context</span><span class="keyword">[</span><span class="string">'http'</span><span class="keyword">][</span><span class="string">'header'</span><span class="keyword">]&nbsp;=&nbsp;</span><span class="default">$headers</span><span class="keyword">;</span><a name="line_33"></a></li><li id="line_34" class="even"><span class="lineNumber">34&nbsp;</span><a name="line_34"></a></li><li id="line_35" class="odd"><span class="lineNumber">35&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_context</span><span class="keyword">)&nbsp;{</span><a name="line_35"></a></li><li id="line_36" class="even"><span class="lineNumber">36&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$context&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">stream_context_create</span><span class="keyword">(</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_context</span><span class="keyword">);</span><a name="line_36"></a></li><li id="line_37" class="odd"><span class="lineNumber">37&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_result&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">file_get_contents</span><span class="keyword">(</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_url</span><span class="keyword">,&nbsp;</span><span class="default">false</span><span class="keyword">,&nbsp;</span><span class="default">$context</span><span class="keyword">);</span><a name="line_37"></a></li><li id="line_38" class="even"><span class="lineNumber">38&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{</span><a name="line_38"></a></li><li id="line_39" class="odd"><span class="lineNumber">39&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_result&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">file_get_contents</span><span class="keyword">(</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_url</span><span class="keyword">);</span><a name="line_39"></a></li><li id="line_40" class="even"><span class="lineNumber">40&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_40"></a></li><li id="line_41" class="odd"><span class="lineNumber">41&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_41"></a></li><li id="line_42" class="even"><span class="lineNumber">42&nbsp;</span><a name="line_42"></a></li><li id="line_43" class="odd"><span class="lineNumber">43&nbsp;</span><span class="keyword">}</span><span>
+</span><a name="line_43"></a></li></ol>
             
             <div id="sidebar">
                 <table cellpadding="3">
@@ -122,25 +92,6 @@
                         
                         <tr class="Checkstyle">
                             <td align="center">
-                                <a href="#line_8" onclick="switchLine('line_8')">
-                                8</a>
-                            </td>
-                            <td align="center">
-                                <a href="#line_8" onclick="switchLine('line_8'); new Effect.Highlight('line_8-8', {duration: 1.5}); return false">
-                                8</a>
-                            </td>
-                            <td>
-                                <a href="#line_8" onclick="switchLine('line_8'); new Effect.Highlight('line_8-8', {duration: 1.5}); return false">
-                                Opening brace of a class must be on the line after the definition</a>
-                            </td>
-                            <td>
-                                Checkstyle                            </td>
-                            <td>
-                                error                            </td>
-                        </tr>
-                        
-                        <tr class="Checkstyle">
-                            <td align="center">
                                 <a href="#line_12" onclick="switchLine('line_12')">
                                 12</a>
                             </td>
@@ -160,111 +111,16 @@
                         
                         <tr class="Checkstyle">
                             <td align="center">
-                                <a href="#line_12" onclick="switchLine('line_12')">
-                                12</a>
+                                <a href="#line_26" onclick="switchLine('line_26')">
+                                26</a>
                             </td>
                             <td align="center">
-                                <a href="#line_12" onclick="switchLine('line_12'); new Effect.Highlight('line_12-12', {duration: 1.5}); return false">
-                                12</a>
+                                <a href="#line_26" onclick="switchLine('line_26'); new Effect.Highlight('line_26-26', {duration: 1.5}); return false">
+                                26</a>
                             </td>
                             <td>
-                                <a href="#line_12" onclick="switchLine('line_12'); new Effect.Highlight('line_12-12', {duration: 1.5}); return false">
-                                Opening brace should be on a new line</a>
-                            </td>
-                            <td>
-                                Checkstyle                            </td>
-                            <td>
-                                error                            </td>
-                        </tr>
-                        
-                        <tr class="Checkstyle">
-                            <td align="center">
-                                <a href="#line_20" onclick="switchLine('line_20')">
-                                20</a>
-                            </td>
-                            <td align="center">
-                                <a href="#line_20" onclick="switchLine('line_20'); new Effect.Highlight('line_20-20', {duration: 1.5}); return false">
-                                20</a>
-                            </td>
-                            <td>
-                                <a href="#line_20" onclick="switchLine('line_20'); new Effect.Highlight('line_20-20', {duration: 1.5}); return false">
-                                Expected &quot;if (...) {\n&quot;; found &quot;if(...) {\n&quot;</a>
-                            </td>
-                            <td>
-                                Checkstyle                            </td>
-                            <td>
-                                error                            </td>
-                        </tr>
-                        
-                        <tr class="Checkstyle">
-                            <td align="center">
-                                <a href="#line_25" onclick="switchLine('line_25')">
-                                25</a>
-                            </td>
-                            <td align="center">
-                                <a href="#line_25" onclick="switchLine('line_25'); new Effect.Highlight('line_25-25', {duration: 1.5}); return false">
-                                25</a>
-                            </td>
-                            <td>
-                                <a href="#line_25" onclick="switchLine('line_25'); new Effect.Highlight('line_25-25', {duration: 1.5}); return false">
+                                <a href="#line_26" onclick="switchLine('line_26'); new Effect.Highlight('line_26-26', {duration: 1.5}); return false">
                                 Missing function doc comment</a>
-                            </td>
-                            <td>
-                                Checkstyle                            </td>
-                            <td>
-                                error                            </td>
-                        </tr>
-                        
-                        <tr class="Checkstyle">
-                            <td align="center">
-                                <a href="#line_25" onclick="switchLine('line_25')">
-                                25</a>
-                            </td>
-                            <td align="center">
-                                <a href="#line_25" onclick="switchLine('line_25'); new Effect.Highlight('line_25-25', {duration: 1.5}); return false">
-                                25</a>
-                            </td>
-                            <td>
-                                <a href="#line_25" onclick="switchLine('line_25'); new Effect.Highlight('line_25-25', {duration: 1.5}); return false">
-                                Opening brace should be on a new line</a>
-                            </td>
-                            <td>
-                                Checkstyle                            </td>
-                            <td>
-                                error                            </td>
-                        </tr>
-                        
-                        <tr class="Checkstyle">
-                            <td align="center">
-                                <a href="#line_27" onclick="switchLine('line_27')">
-                                27</a>
-                            </td>
-                            <td align="center">
-                                <a href="#line_27" onclick="switchLine('line_27'); new Effect.Highlight('line_27-27', {duration: 1.5}); return false">
-                                27</a>
-                            </td>
-                            <td>
-                                <a href="#line_27" onclick="switchLine('line_27'); new Effect.Highlight('line_27-27', {duration: 1.5}); return false">
-                                Expected &quot;foreach (...) {\n&quot;; found &quot;foreach(...) {\n&quot;</a>
-                            </td>
-                            <td>
-                                Checkstyle                            </td>
-                            <td>
-                                error                            </td>
-                        </tr>
-                        
-                        <tr class="Checkstyle">
-                            <td align="center">
-                                <a href="#line_33" onclick="switchLine('line_33')">
-                                33</a>
-                            </td>
-                            <td align="center">
-                                <a href="#line_33" onclick="switchLine('line_33'); new Effect.Highlight('line_33-33', {duration: 1.5}); return false">
-                                33</a>
-                            </td>
-                            <td>
-                                <a href="#line_33" onclick="switchLine('line_33'); new Effect.Highlight('line_33-33', {duration: 1.5}); return false">
-                                Expected &quot;if (...) {\n&quot;; found &quot;if(...) {\n&quot;</a>
                             </td>
                             <td>
                                 Checkstyle                            </td>

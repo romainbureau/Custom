@@ -20,10 +20,10 @@ class Hmac implements AuthInterface
 
     public function set(ProviderInterface $request)
     {
-        $ts = time();
-        $hmac = hash_hmac($this->_encoder, $this->_consumer.$request->getData().$ts, $this->_private_key);
+        $timestamp = time();
+        $hmac = hash_hmac($this->_encoder, $this->_consumer.$request->getData().$timestamp, $this->_private_key);
         $_tmp = array(
-            'ts' => $ts,
+            'ts' => $timestamp,
             'consumer' => $this->_consumer,
             'token' => base64_encode($hmac),
         );

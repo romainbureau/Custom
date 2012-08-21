@@ -35,87 +35,28 @@
                             &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
                             &lt;div class="text"&gt;Missing class doc comment&lt;/div&gt;
                         &lt;/div&gt;
-                        
-                        &lt;div class="tooltip"&gt;
-                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
-                            &lt;div class="text"&gt;Opening brace of a class must be on the line after the definition&lt;/div&gt;
-                        &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">&nbsp;8&nbsp;</span><span class="keyword">class&nbsp;</span><span class="default">Curl&nbsp;</span><span class="keyword">extends&nbsp;</span><span class="default">BaseRequest&nbsp;</span><span class="keyword">implements&nbsp;</span><span class="default">ProviderInterface&nbsp;</span><span class="keyword">{</span><a name="line_8"></a></li><li id="line_9" class="odd"><span class="lineNumber">&nbsp;9&nbsp;</span><a name="line_9"></a></li><li id="line_10" class="even"><span class="lineNumber">10&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;static&nbsp;private&nbsp;</span><span class="default">$_curl</span><span class="keyword">;</span><a name="line_10"></a></li><li id="line_11" title="|
-                        &lt;div class=&quot;tooltip&quot;&gt;
-                            &lt;div class=&quot;title PMD&quot;&gt;PMD&lt;/div&gt;
-                            &lt;div class=&quot;text&quot;&gt;
-      Avoid unused private fields such as '$options'.
-    &lt;/div&gt;
-                        &lt;/div&gt;
-                        
-                        &lt;div class=&quot;tooltip&quot;&gt;
-                            &lt;div class=&quot;title PMD&quot;&gt;PMD&lt;/div&gt;
-                            &lt;div class=&quot;text&quot;&gt;
-      Avoid unused private fields such as '$options'.
-    &lt;/div&gt;
-                        &lt;/div&gt;
-                        " class="odd hasIssues moreErrors"><span class="lineNumber">11&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;private&nbsp;</span><span class="default">$options&nbsp;</span><span class="keyword">=&nbsp;array();</span><a name="line_11"></a></li><li id="line_12" class="even"><span class="lineNumber">12&nbsp;</span><a name="line_12"></a></li><li id="line_13" title='|
+                        ' class="even hasIssues Checkstyle"><span class="lineNumber">&nbsp;8&nbsp;</span><span class="keyword">class&nbsp;</span><span class="default">Curl&nbsp;</span><span class="keyword">extends&nbsp;</span><span class="default">BaseRequest&nbsp;</span><span class="keyword">implements&nbsp;</span><span class="default">ProviderInterface</span><a name="line_8"></a></li><li id="line_9" class="odd"><span class="lineNumber">&nbsp;9&nbsp;</span><span class="keyword">{</span><a name="line_9"></a></li><li id="line_10" class="even"><span class="lineNumber">10&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;private&nbsp;static&nbsp;</span><span class="default">$_curl</span><span class="keyword">;</span><a name="line_10"></a></li><li id="line_11" class="odd"><span class="lineNumber">11&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;private&nbsp;</span><span class="default">$_options&nbsp;</span><span class="keyword">=&nbsp;array();</span><a name="line_11"></a></li><li id="line_12" class="even"><span class="lineNumber">12&nbsp;</span><a name="line_12"></a></li><li id="line_13" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
                             &lt;div class="text"&gt;Missing function doc comment&lt;/div&gt;
                         &lt;/div&gt;
-                        
-                        &lt;div class="tooltip"&gt;
-                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
-                            &lt;div class="text"&gt;Opening brace should be on a new line&lt;/div&gt;
-                        &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">13&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span class="default">setOptions</span><span class="keyword">()&nbsp;{</span><a name="line_13"></a></li><li id="line_14" class="even"><span class="lineNumber">14&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$options&nbsp;</span><span class="keyword">=&nbsp;array(</span><a name="line_14"></a></li><li id="line_15" class="odd"><span class="lineNumber">15&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">CURLOPT_HEADER&nbsp;</span><span class="keyword">=&gt;&nbsp;</span><span class="default">false</span><span class="keyword">,</span><a name="line_15"></a></li><li id="line_16" class="even"><span class="lineNumber">16&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">CURLOPT_RETURNTRANSFER&nbsp;</span><span class="keyword">=&gt;&nbsp;</span><span class="default">true</span><span class="keyword">,</span><a name="line_16"></a></li><li id="line_17" class="odd"><span class="lineNumber">17&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">CURLOPT_FOLLOWLOCATION&nbsp;</span><span class="keyword">=&gt;&nbsp;</span><span class="default">true</span><span class="keyword">,</span><a name="line_17"></a></li><li id="line_18" class="even"><span class="lineNumber">18&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">CURLOPT_MAXREDIRS&nbsp;</span><span class="keyword">=&gt;&nbsp;</span><span class="default">3</span><span class="keyword">,</span><a name="line_18"></a></li><li id="line_19" class="odd"><span class="lineNumber">19&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">CURLOPT_CONNECTTIMEOUT&nbsp;</span><span class="keyword">=&gt;&nbsp;</span><span class="default">30</span><span class="keyword">,</span><a name="line_19"></a></li><li id="line_20" class="even"><span class="lineNumber">20&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">CURLOPT_SSL_VERIFYPEER&nbsp;</span><span class="keyword">=&gt;&nbsp;</span><span class="default">false</span><span class="keyword">,</span><a name="line_20"></a></li><li id="line_21" class="odd"><span class="lineNumber">21&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">CURLOPT_SSL_VERIFYHOST&nbsp;</span><span class="keyword">=&gt;&nbsp;</span><span class="default">false</span><span class="keyword">,</span><a name="line_21"></a></li><li id="line_22" class="even"><span class="lineNumber">22&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);</span><a name="line_22"></a></li><li id="line_23" class="odd"><span class="lineNumber">23&nbsp;</span><a name="line_23"></a></li><li id="line_24" class="even"><span class="lineNumber">24&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch(</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_method</span><span class="keyword">)&nbsp;{</span><a name="line_24"></a></li><li id="line_25" class="odd"><span class="lineNumber">25&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span class="string">'GET'</span><span class="keyword">:</span><a name="line_25"></a></li><li id="line_26" class="even"><span class="lineNumber">26&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;</span><a name="line_26"></a></li><li id="line_27" class="odd"><span class="lineNumber">27&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span class="string">'POST'</span><span class="keyword">:</span><a name="line_27"></a></li><li id="line_28" class="even"><span class="lineNumber">28&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$options</span><span class="keyword">[</span><span class="default">CURLOPT_POST</span><span class="keyword">]&nbsp;=&nbsp;</span><span class="default">true</span><span class="keyword">;</span><a name="line_28"></a></li><li id="line_29" class="odd"><span class="lineNumber">29&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$options</span><span class="keyword">[</span><span class="default">CURLOPT_POSTFIELDS</span><span class="keyword">]&nbsp;=&nbsp;</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_data</span><span class="keyword">;</span><a name="line_29"></a></li><li id="line_30" class="even"><span class="lineNumber">30&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;</span><a name="line_30"></a></li><li id="line_31" class="odd"><span class="lineNumber">31&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span class="string">'PUT'</span><span class="keyword">:</span><a name="line_31"></a></li><li id="line_32" title='|
-                        &lt;div class="tooltip"&gt;
-                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
-                            &lt;div class="text"&gt;Please trim any trailing whitespace&lt;/div&gt;
-                        &lt;/div&gt;
-                        ' class="even hasIssues Checkstyle"><span class="lineNumber">32&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$options</span><span class="keyword">[</span><span class="default">CURLOPT_CUSTOMREQUEST</span><span class="keyword">]&nbsp;=&nbsp;</span><span class="string">'PUT'</span><span class="keyword">;&nbsp;</span><a name="line_32"></a></li><li id="line_33" class="odd"><span class="lineNumber">33&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$options</span><span class="keyword">[</span><span class="default">CURLOPT_POSTFIELDS</span><span class="keyword">]&nbsp;=&nbsp;</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_data</span><span class="keyword">;</span><a name="line_33"></a></li><li id="line_34" class="even"><span class="lineNumber">34&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;</span><a name="line_34"></a></li><li id="line_35" class="odd"><span class="lineNumber">35&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span class="string">'DELETE'</span><span class="keyword">:</span><a name="line_35"></a></li><li id="line_36" title='|
-                        &lt;div class="tooltip"&gt;
-                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
-                            &lt;div class="text"&gt;Please trim any trailing whitespace&lt;/div&gt;
-                        &lt;/div&gt;
-                        ' class="even hasIssues Checkstyle"><span class="lineNumber">36&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$options</span><span class="keyword">[</span><span class="default">CURLOPT_CUSTOMREQUEST</span><span class="keyword">]&nbsp;=&nbsp;</span><span class="string">'DELETE'</span><span class="keyword">;&nbsp;</span><a name="line_36"></a></li><li id="line_37" class="odd"><span class="lineNumber">37&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;</span><a name="line_37"></a></li><li id="line_38" class="even"><span class="lineNumber">38&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_38"></a></li><li id="line_39" class="odd"><span class="lineNumber">39&nbsp;</span><a name="line_39"></a></li><li id="line_40" class="even"><span class="lineNumber">40&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_options&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">$options</span><span class="keyword">;</span><a name="line_40"></a></li><li id="line_41" class="odd"><span class="lineNumber">41&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_41"></a></li><li id="line_42" class="even"><span class="lineNumber">42&nbsp;</span><a name="line_42"></a></li><li id="line_43" title='|
+                        ' class="odd hasIssues Checkstyle"><span class="lineNumber">13&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span class="default">setOptions</span><span class="keyword">()</span><a name="line_13"></a></li><li id="line_14" class="even"><span class="lineNumber">14&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;{</span><a name="line_14"></a></li><li id="line_15" class="odd"><span class="lineNumber">15&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$options&nbsp;</span><span class="keyword">=&nbsp;array(</span><a name="line_15"></a></li><li id="line_16" class="even"><span class="lineNumber">16&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">CURLOPT_HEADER&nbsp;</span><span class="keyword">=&gt;&nbsp;</span><span class="default">false</span><span class="keyword">,</span><a name="line_16"></a></li><li id="line_17" class="odd"><span class="lineNumber">17&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">CURLOPT_RETURNTRANSFER&nbsp;</span><span class="keyword">=&gt;&nbsp;</span><span class="default">true</span><span class="keyword">,</span><a name="line_17"></a></li><li id="line_18" class="even"><span class="lineNumber">18&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">CURLOPT_FOLLOWLOCATION&nbsp;</span><span class="keyword">=&gt;&nbsp;</span><span class="default">true</span><span class="keyword">,</span><a name="line_18"></a></li><li id="line_19" class="odd"><span class="lineNumber">19&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">CURLOPT_MAXREDIRS&nbsp;</span><span class="keyword">=&gt;&nbsp;</span><span class="default">3</span><span class="keyword">,</span><a name="line_19"></a></li><li id="line_20" class="even"><span class="lineNumber">20&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">CURLOPT_CONNECTTIMEOUT&nbsp;</span><span class="keyword">=&gt;&nbsp;</span><span class="default">30</span><span class="keyword">,</span><a name="line_20"></a></li><li id="line_21" class="odd"><span class="lineNumber">21&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">CURLOPT_SSL_VERIFYPEER&nbsp;</span><span class="keyword">=&gt;&nbsp;</span><span class="default">false</span><span class="keyword">,</span><a name="line_21"></a></li><li id="line_22" class="even"><span class="lineNumber">22&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">CURLOPT_SSL_VERIFYHOST&nbsp;</span><span class="keyword">=&gt;&nbsp;</span><span class="default">false</span><span class="keyword">,</span><a name="line_22"></a></li><li id="line_23" class="odd"><span class="lineNumber">23&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);</span><a name="line_23"></a></li><li id="line_24" class="even"><span class="lineNumber">24&nbsp;</span><a name="line_24"></a></li><li id="line_25" class="odd"><span class="lineNumber">25&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch&nbsp;(</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_method</span><span class="keyword">)&nbsp;{</span><a name="line_25"></a></li><li id="line_26" class="even"><span class="lineNumber">26&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span class="string">'GET'</span><span class="keyword">:</span><a name="line_26"></a></li><li id="line_27" class="odd"><span class="lineNumber">27&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;</span><a name="line_27"></a></li><li id="line_28" class="even"><span class="lineNumber">28&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span class="string">'POST'</span><span class="keyword">:</span><a name="line_28"></a></li><li id="line_29" class="odd"><span class="lineNumber">29&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$options</span><span class="keyword">[</span><span class="default">CURLOPT_POST</span><span class="keyword">]&nbsp;=&nbsp;</span><span class="default">true</span><span class="keyword">;</span><a name="line_29"></a></li><li id="line_30" class="even"><span class="lineNumber">30&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$options</span><span class="keyword">[</span><span class="default">CURLOPT_POSTFIELDS</span><span class="keyword">]&nbsp;=&nbsp;</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_data</span><span class="keyword">;</span><a name="line_30"></a></li><li id="line_31" class="odd"><span class="lineNumber">31&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;</span><a name="line_31"></a></li><li id="line_32" class="even"><span class="lineNumber">32&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span class="string">'PUT'</span><span class="keyword">:</span><a name="line_32"></a></li><li id="line_33" class="odd"><span class="lineNumber">33&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$options</span><span class="keyword">[</span><span class="default">CURLOPT_CUSTOMREQUEST</span><span class="keyword">]&nbsp;=&nbsp;</span><span class="string">'PUT'</span><span class="keyword">;</span><a name="line_33"></a></li><li id="line_34" class="even"><span class="lineNumber">34&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$options</span><span class="keyword">[</span><span class="default">CURLOPT_POSTFIELDS</span><span class="keyword">]&nbsp;=&nbsp;</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_data</span><span class="keyword">;</span><a name="line_34"></a></li><li id="line_35" class="odd"><span class="lineNumber">35&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;</span><a name="line_35"></a></li><li id="line_36" class="even"><span class="lineNumber">36&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span class="string">'DELETE'</span><span class="keyword">:</span><a name="line_36"></a></li><li id="line_37" class="odd"><span class="lineNumber">37&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$options</span><span class="keyword">[</span><span class="default">CURLOPT_CUSTOMREQUEST</span><span class="keyword">]&nbsp;=&nbsp;</span><span class="string">'DELETE'</span><span class="keyword">;</span><a name="line_37"></a></li><li id="line_38" class="even"><span class="lineNumber">38&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;</span><a name="line_38"></a></li><li id="line_39" class="odd"><span class="lineNumber">39&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_39"></a></li><li id="line_40" class="even"><span class="lineNumber">40&nbsp;</span><a name="line_40"></a></li><li id="line_41" class="odd"><span class="lineNumber">41&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_options&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">$options</span><span class="keyword">;</span><a name="line_41"></a></li><li id="line_42" class="even"><span class="lineNumber">42&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_42"></a></li><li id="line_43" class="odd"><span class="lineNumber">43&nbsp;</span><a name="line_43"></a></li><li id="line_44" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
                             &lt;div class="text"&gt;Missing function doc comment&lt;/div&gt;
                         &lt;/div&gt;
-                        
-                        &lt;div class="tooltip"&gt;
-                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
-                            &lt;div class="text"&gt;Opening brace should be on a new line&lt;/div&gt;
-                        &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">43&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span class="default">before</span><span class="keyword">()&nbsp;{</span><a name="line_43"></a></li><li id="line_44" title='|
-                        &lt;div class="tooltip"&gt;
-                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
-                            &lt;div class="text"&gt;Please trim any trailing whitespace&lt;/div&gt;
-                        &lt;/div&gt;
-                        ' class="even hasIssues Checkstyle"><span class="lineNumber">44&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">self</span><span class="keyword">::</span><span class="default">$_curl&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">curl_init</span><span class="keyword">();&nbsp;</span><a name="line_44"></a></li><li id="line_45" class="odd"><span class="lineNumber">45&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">setOptions</span><span class="keyword">();</span><a name="line_45"></a></li><li id="line_46" class="even"><span class="lineNumber">46&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_46"></a></li><li id="line_47" class="odd"><span class="lineNumber">47&nbsp;</span><a name="line_47"></a></li><li id="line_48" title='|
+                        ' class="even hasIssues Checkstyle"><span class="lineNumber">44&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span class="default">before</span><span class="keyword">()</span><a name="line_44"></a></li><li id="line_45" class="odd"><span class="lineNumber">45&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;{</span><a name="line_45"></a></li><li id="line_46" class="even"><span class="lineNumber">46&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">self</span><span class="keyword">::</span><span class="default">$_curl&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">curl_init</span><span class="keyword">();</span><a name="line_46"></a></li><li id="line_47" class="odd"><span class="lineNumber">47&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">setOptions</span><span class="keyword">();</span><a name="line_47"></a></li><li id="line_48" class="even"><span class="lineNumber">48&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_48"></a></li><li id="line_49" class="odd"><span class="lineNumber">49&nbsp;</span><a name="line_49"></a></li><li id="line_50" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
                             &lt;div class="text"&gt;Missing function doc comment&lt;/div&gt;
                         &lt;/div&gt;
-                        
-                        &lt;div class="tooltip"&gt;
-                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
-                            &lt;div class="text"&gt;Opening brace should be on a new line&lt;/div&gt;
-                        &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">48&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span class="default">run</span><span class="keyword">()&nbsp;{</span><a name="line_48"></a></li><li id="line_49" class="odd"><span class="lineNumber">49&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$headers&nbsp;</span><span class="keyword">=&nbsp;array();</span><a name="line_49"></a></li><li id="line_50" title='|
-                        &lt;div class="tooltip"&gt;
-                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
-                            &lt;div class="text"&gt;Expected &amp;quot;foreach (...) {\n&amp;quot;; found &amp;quot;foreach(...) {\n&amp;quot;&lt;/div&gt;
-                        &lt;/div&gt;
-                        ' class="even hasIssues Checkstyle"><span class="lineNumber">50&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach(</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_headers&nbsp;</span><span class="keyword">as&nbsp;</span><span class="default">$header&nbsp;</span><span class="keyword">=&gt;&nbsp;</span><span class="default">$value</span><span class="keyword">)&nbsp;{</span><a name="line_50"></a></li><li id="line_51" class="odd"><span class="lineNumber">51&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$headers</span><span class="keyword">[]&nbsp;=&nbsp;</span><span class="default">$header</span><span class="keyword">.</span><span class="string">':&nbsp;'</span><span class="keyword">.</span><span class="default">$value</span><span class="keyword">;</span><a name="line_51"></a></li><li id="line_52" class="even"><span class="lineNumber">52&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_52"></a></li><li id="line_53" class="odd"><span class="lineNumber">53&nbsp;</span><a name="line_53"></a></li><li id="line_54" class="even"><span class="lineNumber">54&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">curl_setopt</span><span class="keyword">(</span><span class="default">self</span><span class="keyword">::</span><span class="default">$_curl</span><span class="keyword">,&nbsp;</span><span class="default">CURLOPT_URL</span><span class="keyword">,&nbsp;</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_url</span><span class="keyword">);</span><a name="line_54"></a></li><li id="line_55" class="odd"><span class="lineNumber">55&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">curl_setopt</span><span class="keyword">(</span><span class="default">self</span><span class="keyword">::</span><span class="default">$_curl</span><span class="keyword">,&nbsp;</span><span class="default">CURLOPT_HTTPHEADER</span><span class="keyword">,&nbsp;</span><span class="default">$headers</span><span class="keyword">);</span><a name="line_55"></a></li><li id="line_56" class="even"><span class="lineNumber">56&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">curl_setopt_array</span><span class="keyword">(</span><span class="default">self</span><span class="keyword">::</span><span class="default">$_curl</span><span class="keyword">,&nbsp;</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_options</span><span class="keyword">);</span><a name="line_56"></a></li><li id="line_57" class="odd"><span class="lineNumber">57&nbsp;</span><a name="line_57"></a></li><li id="line_58" class="even"><span class="lineNumber">58&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_result&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">curl_exec</span><span class="keyword">(</span><span class="default">self</span><span class="keyword">::</span><span class="default">$_curl</span><span class="keyword">);</span><a name="line_58"></a></li><li id="line_59" class="odd"><span class="lineNumber">59&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_59"></a></li><li id="line_60" class="even"><span class="lineNumber">60&nbsp;</span><a name="line_60"></a></li><li id="line_61" title='|
+                        ' class="even hasIssues Checkstyle"><span class="lineNumber">50&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span class="default">run</span><span class="keyword">()</span><a name="line_50"></a></li><li id="line_51" class="odd"><span class="lineNumber">51&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;{</span><a name="line_51"></a></li><li id="line_52" class="even"><span class="lineNumber">52&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$headers&nbsp;</span><span class="keyword">=&nbsp;array();</span><a name="line_52"></a></li><li id="line_53" class="odd"><span class="lineNumber">53&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_headers&nbsp;</span><span class="keyword">as&nbsp;</span><span class="default">$header&nbsp;</span><span class="keyword">=&gt;&nbsp;</span><span class="default">$value</span><span class="keyword">)&nbsp;{</span><a name="line_53"></a></li><li id="line_54" class="even"><span class="lineNumber">54&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$headers</span><span class="keyword">[]&nbsp;=&nbsp;</span><span class="default">$header</span><span class="keyword">.</span><span class="string">':&nbsp;'</span><span class="keyword">.</span><span class="default">$value</span><span class="keyword">;</span><a name="line_54"></a></li><li id="line_55" class="odd"><span class="lineNumber">55&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_55"></a></li><li id="line_56" class="even"><span class="lineNumber">56&nbsp;</span><a name="line_56"></a></li><li id="line_57" class="odd"><span class="lineNumber">57&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">curl_setopt</span><span class="keyword">(</span><span class="default">self</span><span class="keyword">::</span><span class="default">$_curl</span><span class="keyword">,&nbsp;</span><span class="default">CURLOPT_URL</span><span class="keyword">,&nbsp;</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_url</span><span class="keyword">);</span><a name="line_57"></a></li><li id="line_58" class="even"><span class="lineNumber">58&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">curl_setopt</span><span class="keyword">(</span><span class="default">self</span><span class="keyword">::</span><span class="default">$_curl</span><span class="keyword">,&nbsp;</span><span class="default">CURLOPT_HTTPHEADER</span><span class="keyword">,&nbsp;</span><span class="default">$headers</span><span class="keyword">);</span><a name="line_58"></a></li><li id="line_59" class="odd"><span class="lineNumber">59&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">curl_setopt_array</span><span class="keyword">(</span><span class="default">self</span><span class="keyword">::</span><span class="default">$_curl</span><span class="keyword">,&nbsp;</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_options</span><span class="keyword">);</span><a name="line_59"></a></li><li id="line_60" class="even"><span class="lineNumber">60&nbsp;</span><a name="line_60"></a></li><li id="line_61" class="odd"><span class="lineNumber">61&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">_result&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">curl_exec</span><span class="keyword">(</span><span class="default">self</span><span class="keyword">::</span><span class="default">$_curl</span><span class="keyword">);</span><a name="line_61"></a></li><li id="line_62" class="even"><span class="lineNumber">62&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_62"></a></li><li id="line_63" class="odd"><span class="lineNumber">63&nbsp;</span><a name="line_63"></a></li><li id="line_64" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
                             &lt;div class="text"&gt;Missing function doc comment&lt;/div&gt;
                         &lt;/div&gt;
-                        
-                        &lt;div class="tooltip"&gt;
-                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
-                            &lt;div class="text"&gt;Opening brace should be on a new line&lt;/div&gt;
-                        &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">61&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span class="default">after</span><span class="keyword">()&nbsp;{</span><a name="line_61"></a></li><li id="line_62" class="even"><span class="lineNumber">62&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">curl_close</span><span class="keyword">(</span><span class="default">self</span><span class="keyword">::</span><span class="default">$_curl</span><span class="keyword">);</span><a name="line_62"></a></li><li id="line_63" class="odd"><span class="lineNumber">63&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_63"></a></li><li id="line_64" class="even"><span class="lineNumber">64&nbsp;</span><a name="line_64"></a></li><li id="line_65" class="odd"><span class="lineNumber">65&nbsp;</span><span class="keyword">}</span><span>
-</span><a name="line_65"></a></li></ol>
+                        ' class="even hasIssues Checkstyle"><span class="lineNumber">64&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span class="default">after</span><span class="keyword">()</span><a name="line_64"></a></li><li id="line_65" class="odd"><span class="lineNumber">65&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;{</span><a name="line_65"></a></li><li id="line_66" class="even"><span class="lineNumber">66&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">curl_close</span><span class="keyword">(</span><span class="default">self</span><span class="keyword">::</span><span class="default">$_curl</span><span class="keyword">);</span><a name="line_66"></a></li><li id="line_67" class="odd"><span class="lineNumber">67&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_67"></a></li><li id="line_68" class="even"><span class="lineNumber">68&nbsp;</span><a name="line_68"></a></li><li id="line_69" class="odd"><span class="lineNumber">69&nbsp;</span><span class="keyword">}</span><span>
+</span><a name="line_69"></a></li></ol>
             
             <div id="sidebar">
                 <table cellpadding="3">
@@ -161,25 +102,6 @@
                         
                         <tr class="Checkstyle">
                             <td align="center">
-                                <a href="#line_8" onclick="switchLine('line_8')">
-                                8</a>
-                            </td>
-                            <td align="center">
-                                <a href="#line_8" onclick="switchLine('line_8'); new Effect.Highlight('line_8-8', {duration: 1.5}); return false">
-                                8</a>
-                            </td>
-                            <td>
-                                <a href="#line_8" onclick="switchLine('line_8'); new Effect.Highlight('line_8-8', {duration: 1.5}); return false">
-                                Opening brace of a class must be on the line after the definition</a>
-                            </td>
-                            <td>
-                                Checkstyle                            </td>
-                            <td>
-                                error                            </td>
-                        </tr>
-                        
-                        <tr class="Checkstyle">
-                            <td align="center">
                                 <a href="#line_13" onclick="switchLine('line_13')">
                                 13</a>
                             </td>
@@ -190,101 +112,6 @@
                             <td>
                                 <a href="#line_13" onclick="switchLine('line_13'); new Effect.Highlight('line_13-13', {duration: 1.5}); return false">
                                 Missing function doc comment</a>
-                            </td>
-                            <td>
-                                Checkstyle                            </td>
-                            <td>
-                                error                            </td>
-                        </tr>
-                        
-                        <tr class="Checkstyle">
-                            <td align="center">
-                                <a href="#line_13" onclick="switchLine('line_13')">
-                                13</a>
-                            </td>
-                            <td align="center">
-                                <a href="#line_13" onclick="switchLine('line_13'); new Effect.Highlight('line_13-13', {duration: 1.5}); return false">
-                                13</a>
-                            </td>
-                            <td>
-                                <a href="#line_13" onclick="switchLine('line_13'); new Effect.Highlight('line_13-13', {duration: 1.5}); return false">
-                                Opening brace should be on a new line</a>
-                            </td>
-                            <td>
-                                Checkstyle                            </td>
-                            <td>
-                                error                            </td>
-                        </tr>
-                        
-                        <tr class="Checkstyle">
-                            <td align="center">
-                                <a href="#line_32" onclick="switchLine('line_32')">
-                                32</a>
-                            </td>
-                            <td align="center">
-                                <a href="#line_32" onclick="switchLine('line_32'); new Effect.Highlight('line_32-32', {duration: 1.5}); return false">
-                                32</a>
-                            </td>
-                            <td>
-                                <a href="#line_32" onclick="switchLine('line_32'); new Effect.Highlight('line_32-32', {duration: 1.5}); return false">
-                                Please trim any trailing whitespace</a>
-                            </td>
-                            <td>
-                                Checkstyle                            </td>
-                            <td>
-                                warning                            </td>
-                        </tr>
-                        
-                        <tr class="Checkstyle">
-                            <td align="center">
-                                <a href="#line_36" onclick="switchLine('line_36')">
-                                36</a>
-                            </td>
-                            <td align="center">
-                                <a href="#line_36" onclick="switchLine('line_36'); new Effect.Highlight('line_36-36', {duration: 1.5}); return false">
-                                36</a>
-                            </td>
-                            <td>
-                                <a href="#line_36" onclick="switchLine('line_36'); new Effect.Highlight('line_36-36', {duration: 1.5}); return false">
-                                Please trim any trailing whitespace</a>
-                            </td>
-                            <td>
-                                Checkstyle                            </td>
-                            <td>
-                                warning                            </td>
-                        </tr>
-                        
-                        <tr class="Checkstyle">
-                            <td align="center">
-                                <a href="#line_43" onclick="switchLine('line_43')">
-                                43</a>
-                            </td>
-                            <td align="center">
-                                <a href="#line_43" onclick="switchLine('line_43'); new Effect.Highlight('line_43-43', {duration: 1.5}); return false">
-                                43</a>
-                            </td>
-                            <td>
-                                <a href="#line_43" onclick="switchLine('line_43'); new Effect.Highlight('line_43-43', {duration: 1.5}); return false">
-                                Missing function doc comment</a>
-                            </td>
-                            <td>
-                                Checkstyle                            </td>
-                            <td>
-                                error                            </td>
-                        </tr>
-                        
-                        <tr class="Checkstyle">
-                            <td align="center">
-                                <a href="#line_43" onclick="switchLine('line_43')">
-                                43</a>
-                            </td>
-                            <td align="center">
-                                <a href="#line_43" onclick="switchLine('line_43'); new Effect.Highlight('line_43-43', {duration: 1.5}); return false">
-                                43</a>
-                            </td>
-                            <td>
-                                <a href="#line_43" onclick="switchLine('line_43'); new Effect.Highlight('line_43-43', {duration: 1.5}); return false">
-                                Opening brace should be on a new line</a>
                             </td>
                             <td>
                                 Checkstyle                            </td>
@@ -303,45 +130,7 @@
                             </td>
                             <td>
                                 <a href="#line_44" onclick="switchLine('line_44'); new Effect.Highlight('line_44-44', {duration: 1.5}); return false">
-                                Please trim any trailing whitespace</a>
-                            </td>
-                            <td>
-                                Checkstyle                            </td>
-                            <td>
-                                warning                            </td>
-                        </tr>
-                        
-                        <tr class="Checkstyle">
-                            <td align="center">
-                                <a href="#line_48" onclick="switchLine('line_48')">
-                                48</a>
-                            </td>
-                            <td align="center">
-                                <a href="#line_48" onclick="switchLine('line_48'); new Effect.Highlight('line_48-48', {duration: 1.5}); return false">
-                                48</a>
-                            </td>
-                            <td>
-                                <a href="#line_48" onclick="switchLine('line_48'); new Effect.Highlight('line_48-48', {duration: 1.5}); return false">
                                 Missing function doc comment</a>
-                            </td>
-                            <td>
-                                Checkstyle                            </td>
-                            <td>
-                                error                            </td>
-                        </tr>
-                        
-                        <tr class="Checkstyle">
-                            <td align="center">
-                                <a href="#line_48" onclick="switchLine('line_48')">
-                                48</a>
-                            </td>
-                            <td align="center">
-                                <a href="#line_48" onclick="switchLine('line_48'); new Effect.Highlight('line_48-48', {duration: 1.5}); return false">
-                                48</a>
-                            </td>
-                            <td>
-                                <a href="#line_48" onclick="switchLine('line_48'); new Effect.Highlight('line_48-48', {duration: 1.5}); return false">
-                                Opening brace should be on a new line</a>
                             </td>
                             <td>
                                 Checkstyle                            </td>
@@ -360,25 +149,6 @@
                             </td>
                             <td>
                                 <a href="#line_50" onclick="switchLine('line_50'); new Effect.Highlight('line_50-50', {duration: 1.5}); return false">
-                                Expected &quot;foreach (...) {\n&quot;; found &quot;foreach(...) {\n&quot;</a>
-                            </td>
-                            <td>
-                                Checkstyle                            </td>
-                            <td>
-                                error                            </td>
-                        </tr>
-                        
-                        <tr class="Checkstyle">
-                            <td align="center">
-                                <a href="#line_61" onclick="switchLine('line_61')">
-                                61</a>
-                            </td>
-                            <td align="center">
-                                <a href="#line_61" onclick="switchLine('line_61'); new Effect.Highlight('line_61-61', {duration: 1.5}); return false">
-                                61</a>
-                            </td>
-                            <td>
-                                <a href="#line_61" onclick="switchLine('line_61'); new Effect.Highlight('line_61-61', {duration: 1.5}); return false">
                                 Missing function doc comment</a>
                             </td>
                             <td>
@@ -389,61 +159,19 @@
                         
                         <tr class="Checkstyle">
                             <td align="center">
-                                <a href="#line_61" onclick="switchLine('line_61')">
-                                61</a>
+                                <a href="#line_64" onclick="switchLine('line_64')">
+                                64</a>
                             </td>
                             <td align="center">
-                                <a href="#line_61" onclick="switchLine('line_61'); new Effect.Highlight('line_61-61', {duration: 1.5}); return false">
-                                61</a>
+                                <a href="#line_64" onclick="switchLine('line_64'); new Effect.Highlight('line_64-64', {duration: 1.5}); return false">
+                                64</a>
                             </td>
                             <td>
-                                <a href="#line_61" onclick="switchLine('line_61'); new Effect.Highlight('line_61-61', {duration: 1.5}); return false">
-                                Opening brace should be on a new line</a>
+                                <a href="#line_64" onclick="switchLine('line_64'); new Effect.Highlight('line_64-64', {duration: 1.5}); return false">
+                                Missing function doc comment</a>
                             </td>
                             <td>
                                 Checkstyle                            </td>
-                            <td>
-                                error                            </td>
-                        </tr>
-                        
-                        <tr class="PMD">
-                            <td align="center">
-                                <a href="#line_11" onclick="switchLine('line_11')">
-                                11</a>
-                            </td>
-                            <td align="center">
-                                <a href="#line_11" onclick="switchLine('line_11'); new Effect.Highlight('line_11-11', {duration: 1.5}); return false">
-                                11</a>
-                            </td>
-                            <td>
-                                <a href="#line_11" onclick="switchLine('line_11'); new Effect.Highlight('line_11-11', {duration: 1.5}); return false">
-                                
-      Avoid unused private fields such as '$options'.
-    </a>
-                            </td>
-                            <td>
-                                PMD                            </td>
-                            <td>
-                                error                            </td>
-                        </tr>
-                        
-                        <tr class="PMD">
-                            <td align="center">
-                                <a href="#line_11" onclick="switchLine('line_11')">
-                                11</a>
-                            </td>
-                            <td align="center">
-                                <a href="#line_11" onclick="switchLine('line_11'); new Effect.Highlight('line_11-11', {duration: 1.5}); return false">
-                                11</a>
-                            </td>
-                            <td>
-                                <a href="#line_11" onclick="switchLine('line_11'); new Effect.Highlight('line_11-11', {duration: 1.5}); return false">
-                                
-      Avoid unused private fields such as '$options'.
-    </a>
-                            </td>
-                            <td>
-                                PMD                            </td>
                             <td>
                                 error                            </td>
                         </tr>

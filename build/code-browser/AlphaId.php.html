@@ -30,12 +30,7 @@
                 AlphaId.php            </div>
 
             <ol class="code"><li id="line_1" class="odd"><span class="lineNumber">&nbsp;1&nbsp;</span><span>
-</span><span class="default">&lt;?php</span><a name="line_1"></a></li><li id="line_2" class="even"><span class="lineNumber">&nbsp;2&nbsp;</span><a name="line_2"></a></li><li id="line_3" class="odd"><span class="lineNumber">&nbsp;3&nbsp;</span><span class="keyword">namespace&nbsp;</span><span class="default">Custom</span><span class="keyword">;</span><a name="line_3"></a></li><li id="line_4" class="even"><span class="lineNumber">&nbsp;4&nbsp;</span><a name="line_4"></a></li><li id="line_5" class="odd"><span class="lineNumber">&nbsp;5&nbsp;</span><span class="comment">/**</span><a name="line_5"></a></li><li id="line_6" class="even"><span class="lineNumber">&nbsp;6&nbsp;</span><span class="comment">&nbsp;*&nbsp;Translates&nbsp;a&nbsp;number&nbsp;to&nbsp;a&nbsp;short&nbsp;alhanumeric&nbsp;version</span><a name="line_6"></a></li><li id="line_7" class="odd"><span class="lineNumber">&nbsp;7&nbsp;</span><span class="comment">&nbsp;*</span><a name="line_7"></a></li><li id="line_8" class="even"><span class="lineNumber">&nbsp;8&nbsp;</span><span class="comment">&nbsp;*&nbsp;Translated&nbsp;any&nbsp;number&nbsp;up&nbsp;to&nbsp;9007199254740992</span><a name="line_8"></a></li><li id="line_9" class="odd"><span class="lineNumber">&nbsp;9&nbsp;</span><span class="comment">&nbsp;*&nbsp;to&nbsp;a&nbsp;shorter&nbsp;version&nbsp;in&nbsp;letters&nbsp;e.g.:</span><a name="line_9"></a></li><li id="line_10" class="even"><span class="lineNumber">10&nbsp;</span><span class="comment">&nbsp;*&nbsp;9007199254740989&nbsp;--&gt;&nbsp;PpQXn7COf</span><a name="line_10"></a></li><li id="line_11" class="odd"><span class="lineNumber">11&nbsp;</span><span class="comment">&nbsp;*</span><a name="line_11"></a></li><li id="line_12" class="even"><span class="lineNumber">12&nbsp;</span><span class="comment">&nbsp;*&nbsp;specifiying&nbsp;the&nbsp;second&nbsp;argument&nbsp;true,&nbsp;it&nbsp;will</span><a name="line_12"></a></li><li id="line_13" class="odd"><span class="lineNumber">13&nbsp;</span><span class="comment">&nbsp;*&nbsp;translate&nbsp;back&nbsp;e.g.:</span><a name="line_13"></a></li><li id="line_14" class="even"><span class="lineNumber">14&nbsp;</span><span class="comment">&nbsp;*&nbsp;PpQXn7COf&nbsp;--&gt;&nbsp;9007199254740989</span><a name="line_14"></a></li><li id="line_15" class="odd"><span class="lineNumber">15&nbsp;</span><span class="comment">&nbsp;*</span><a name="line_15"></a></li><li id="line_16" class="even"><span class="lineNumber">16&nbsp;</span><span class="comment">&nbsp;*&nbsp;this&nbsp;function&nbsp;is&nbsp;based&nbsp;on&nbsp;any2dec&nbsp;&amp;&amp;&nbsp;dec2any&nbsp;by</span><a name="line_16"></a></li><li id="line_17" class="odd"><span class="lineNumber">17&nbsp;</span><span class="comment">&nbsp;*&nbsp;fragmer[at]mail[dot]ru</span><a name="line_17"></a></li><li id="line_18" class="even"><span class="lineNumber">18&nbsp;</span><span class="comment">&nbsp;*&nbsp;see:&nbsp;http://nl3.php.net/manual/en/function.base-convert.php#52450</span><a name="line_18"></a></li><li id="line_19" class="odd"><span class="lineNumber">19&nbsp;</span><span class="comment">&nbsp;**/</span><a name="line_19"></a></li><li id="line_20" title='|
-                        &lt;div class="tooltip"&gt;
-                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
-                            &lt;div class="text"&gt;Opening brace of a class must be on the line after the definition&lt;/div&gt;
-                        &lt;/div&gt;
-                        ' class="even hasIssues Checkstyle"><span class="lineNumber">20&nbsp;</span><span class="keyword">final&nbsp;class&nbsp;</span><span class="default">AlphaId&nbsp;</span><span class="keyword">{</span><a name="line_20"></a></li><li id="line_21" title='|
+</span><span class="default">&lt;?php</span><a name="line_1"></a></li><li id="line_2" class="even"><span class="lineNumber">&nbsp;2&nbsp;</span><a name="line_2"></a></li><li id="line_3" class="odd"><span class="lineNumber">&nbsp;3&nbsp;</span><span class="keyword">namespace&nbsp;</span><span class="default">Custom</span><span class="keyword">;</span><a name="line_3"></a></li><li id="line_4" class="even"><span class="lineNumber">&nbsp;4&nbsp;</span><a name="line_4"></a></li><li id="line_5" class="odd"><span class="lineNumber">&nbsp;5&nbsp;</span><span class="comment">/**</span><a name="line_5"></a></li><li id="line_6" class="even"><span class="lineNumber">&nbsp;6&nbsp;</span><span class="comment">&nbsp;*&nbsp;Translates&nbsp;a&nbsp;number&nbsp;to&nbsp;a&nbsp;short&nbsp;alhanumeric&nbsp;version</span><a name="line_6"></a></li><li id="line_7" class="odd"><span class="lineNumber">&nbsp;7&nbsp;</span><span class="comment">&nbsp;*</span><a name="line_7"></a></li><li id="line_8" class="even"><span class="lineNumber">&nbsp;8&nbsp;</span><span class="comment">&nbsp;*&nbsp;Translated&nbsp;any&nbsp;number&nbsp;up&nbsp;to&nbsp;9007199254740992</span><a name="line_8"></a></li><li id="line_9" class="odd"><span class="lineNumber">&nbsp;9&nbsp;</span><span class="comment">&nbsp;*&nbsp;to&nbsp;a&nbsp;shorter&nbsp;version&nbsp;in&nbsp;letters&nbsp;e.g.:</span><a name="line_9"></a></li><li id="line_10" class="even"><span class="lineNumber">10&nbsp;</span><span class="comment">&nbsp;*&nbsp;9007199254740989&nbsp;--&gt;&nbsp;PpQXn7COf</span><a name="line_10"></a></li><li id="line_11" class="odd"><span class="lineNumber">11&nbsp;</span><span class="comment">&nbsp;*</span><a name="line_11"></a></li><li id="line_12" class="even"><span class="lineNumber">12&nbsp;</span><span class="comment">&nbsp;*&nbsp;specifiying&nbsp;the&nbsp;second&nbsp;argument&nbsp;true,&nbsp;it&nbsp;will</span><a name="line_12"></a></li><li id="line_13" class="odd"><span class="lineNumber">13&nbsp;</span><span class="comment">&nbsp;*&nbsp;translate&nbsp;back&nbsp;e.g.:</span><a name="line_13"></a></li><li id="line_14" class="even"><span class="lineNumber">14&nbsp;</span><span class="comment">&nbsp;*&nbsp;PpQXn7COf&nbsp;--&gt;&nbsp;9007199254740989</span><a name="line_14"></a></li><li id="line_15" class="odd"><span class="lineNumber">15&nbsp;</span><span class="comment">&nbsp;*</span><a name="line_15"></a></li><li id="line_16" class="even"><span class="lineNumber">16&nbsp;</span><span class="comment">&nbsp;*&nbsp;this&nbsp;function&nbsp;is&nbsp;based&nbsp;on&nbsp;any2dec&nbsp;&amp;&amp;&nbsp;dec2any&nbsp;by</span><a name="line_16"></a></li><li id="line_17" class="odd"><span class="lineNumber">17&nbsp;</span><span class="comment">&nbsp;*&nbsp;fragmer[at]mail[dot]ru</span><a name="line_17"></a></li><li id="line_18" class="even"><span class="lineNumber">18&nbsp;</span><span class="comment">&nbsp;*&nbsp;see:&nbsp;http://nl3.php.net/manual/en/function.base-convert.php#52450</span><a name="line_18"></a></li><li id="line_19" class="odd"><span class="lineNumber">19&nbsp;</span><span class="comment">&nbsp;**/</span><a name="line_19"></a></li><li id="line_20" class="even"><span class="lineNumber">20&nbsp;</span><span class="keyword">final&nbsp;class&nbsp;</span><span class="default">AlphaId</span><a name="line_20"></a></li><li id="line_21" class="odd"><span class="lineNumber">21&nbsp;</span><span class="keyword">{</span><a name="line_21"></a></li><li id="line_22" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
                             &lt;div class="text"&gt;Missing function doc comment&lt;/div&gt;
@@ -52,11 +47,6 @@
                         &lt;/div&gt;
                         
                         &lt;div class="tooltip"&gt;
-                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
-                            &lt;div class="text"&gt;Opening brace should be on a new line&lt;/div&gt;
-                        &lt;/div&gt;
-                        
-                        &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
       The method encode() has a Cyclomatic Complexity of 12. The configured cyclomatic complexity threshold is 10.
@@ -97,7 +87,7 @@
       Avoid variables with short names like $in. Configured minimum length is 3.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">21&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;static&nbsp;public&nbsp;function&nbsp;</span><span class="default">encode</span><span class="keyword">(</span><span class="default">$in</span><span class="keyword">,&nbsp;</span><span class="default">$to_num&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">false</span><span class="keyword">,&nbsp;</span><span class="default">$pad_up&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">false</span><span class="keyword">,&nbsp;</span><span class="default">$passKey&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">null</span><span class="keyword">)&nbsp;{</span><a name="line_21"></a></li><li id="line_22" title='|
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">22&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;static&nbsp;function&nbsp;</span><span class="default">encode</span><span class="keyword">(</span><span class="default">$in</span><span class="keyword">,&nbsp;</span><span class="default">$to_num&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">false</span><span class="keyword">,&nbsp;</span><span class="default">$pad_up&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">false</span><span class="keyword">,&nbsp;</span><span class="default">$passKey&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">null</span><span class="keyword">)</span><a name="line_22"></a></li><li id="line_23" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -125,7 +115,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">22&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$index&nbsp;</span><span class="keyword">=&nbsp;</span><span class="string">"abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"</span><span class="keyword">;</span><a name="line_22"></a></li><li id="line_23" title='|
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">23&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;{</span><a name="line_23"></a></li><li id="line_24" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -153,7 +143,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">23&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span class="default">$passKey&nbsp;</span><span class="keyword">!==&nbsp;</span><span class="default">null</span><span class="keyword">)&nbsp;{</span><a name="line_23"></a></li><li id="line_24" title='|
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">24&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$index&nbsp;</span><span class="keyword">=&nbsp;</span><span class="string">"abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"</span><span class="keyword">;</span><a name="line_24"></a></li><li id="line_25" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -181,7 +171,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">24&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">//&nbsp;Although&nbsp;this&nbsp;function's&nbsp;purpose&nbsp;is&nbsp;to&nbsp;just&nbsp;make&nbsp;the</span><a name="line_24"></a></li><li id="line_25" title='|
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">25&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span class="default">$passKey&nbsp;</span><span class="keyword">!==&nbsp;</span><span class="default">null</span><span class="keyword">)&nbsp;{</span><a name="line_25"></a></li><li id="line_26" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -209,7 +199,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">25&nbsp;</span><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;ID&nbsp;short&nbsp;-&nbsp;and&nbsp;not&nbsp;so&nbsp;much&nbsp;secure,</span><a name="line_25"></a></li><li id="line_26" title='|
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">26&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">//&nbsp;Although&nbsp;this&nbsp;function's&nbsp;purpose&nbsp;is&nbsp;to&nbsp;just&nbsp;make&nbsp;the</span><a name="line_26"></a></li><li id="line_27" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -237,7 +227,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">26&nbsp;</span><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;with&nbsp;this&nbsp;patch&nbsp;by&nbsp;Simon&nbsp;Franz&nbsp;(http://blog.snaky.org/)</span><a name="line_26"></a></li><li id="line_27" title='|
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">27&nbsp;</span><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;ID&nbsp;short&nbsp;-&nbsp;and&nbsp;not&nbsp;so&nbsp;much&nbsp;secure,</span><a name="line_27"></a></li><li id="line_28" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -265,7 +255,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">27&nbsp;</span><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;you&nbsp;can&nbsp;optionally&nbsp;supply&nbsp;a&nbsp;password&nbsp;to&nbsp;make&nbsp;it&nbsp;harder</span><a name="line_27"></a></li><li id="line_28" title='|
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">28&nbsp;</span><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;with&nbsp;this&nbsp;patch&nbsp;by&nbsp;Simon&nbsp;Franz&nbsp;(http://blog.snaky.org/)</span><a name="line_28"></a></li><li id="line_29" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -293,7 +283,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">28&nbsp;</span><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;to&nbsp;calculate&nbsp;the&nbsp;corresponding&nbsp;numeric&nbsp;ID</span><a name="line_28"></a></li><li id="line_29" title='|
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">29&nbsp;</span><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;you&nbsp;can&nbsp;optionally&nbsp;supply&nbsp;a&nbsp;password&nbsp;to&nbsp;make&nbsp;it&nbsp;harder</span><a name="line_29"></a></li><li id="line_30" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -321,7 +311,35 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">29&nbsp;</span><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">for&nbsp;(</span><span class="default">$n&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">0</span><span class="keyword">;&nbsp;</span><span class="default">$n</span><span class="keyword">&lt;</span><span class="default">strlen</span><span class="keyword">(</span><span class="default">$index</span><span class="keyword">);&nbsp;</span><span class="default">$n</span><span class="keyword">++)&nbsp;{</span><a name="line_29"></a></li><li id="line_30" title='|
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">30&nbsp;</span><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;to&nbsp;calculate&nbsp;the&nbsp;corresponding&nbsp;numeric&nbsp;ID</span><a name="line_30"></a></li><li id="line_31" title='|
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
+                            &lt;div class="text"&gt;
+      The method encode() has a Cyclomatic Complexity of 12. The configured cyclomatic complexity threshold is 10.
+    &lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
+                            &lt;div class="text"&gt;
+      The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
+    &lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
+                            &lt;div class="text"&gt;
+      The method encode() has a Cyclomatic Complexity of 12. The configured cyclomatic complexity threshold is 10.
+    &lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
+                            &lt;div class="text"&gt;
+      The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
+    &lt;/div&gt;
+                        &lt;/div&gt;
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">31&nbsp;</span><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">for&nbsp;(</span><span class="default">$n&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">0</span><span class="keyword">;&nbsp;</span><span class="default">$n</span><span class="keyword">&lt;</span><span class="default">strlen</span><span class="keyword">(</span><span class="default">$index</span><span class="keyword">);&nbsp;</span><span class="default">$n</span><span class="keyword">++)&nbsp;{</span><a name="line_31"></a></li><li id="line_32" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
                             &lt;div class="text"&gt;No space found after comma in function call&lt;/div&gt;
@@ -383,7 +401,7 @@
       Avoid variables with short names like $i. Configured minimum length is 3.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">30&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$i</span><span class="keyword">[]&nbsp;=&nbsp;</span><span class="default">substr</span><span class="keyword">(&nbsp;</span><span class="default">$index</span><span class="keyword">,</span><span class="default">$n&nbsp;</span><span class="keyword">,</span><span class="default">1</span><span class="keyword">);</span><a name="line_30"></a></li><li id="line_31" title='|
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">32&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$i</span><span class="keyword">[]&nbsp;=&nbsp;</span><span class="default">substr</span><span class="keyword">(&nbsp;</span><span class="default">$index</span><span class="keyword">,</span><span class="default">$n&nbsp;</span><span class="keyword">,</span><span class="default">1</span><span class="keyword">);</span><a name="line_32"></a></li><li id="line_33" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -411,7 +429,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">31&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_31"></a></li><li id="line_32" title='|
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">33&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_33"></a></li><li id="line_34" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -439,7 +457,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">32&nbsp;</span><a name="line_32"></a></li><li id="line_33" title='|
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">34&nbsp;</span><a name="line_34"></a></li><li id="line_35" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
                             &lt;div class="text"&gt;No space found after comma in function call&lt;/div&gt;
@@ -472,7 +490,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">33&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$passhash&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">hash</span><span class="keyword">(</span><span class="string">'sha256'</span><span class="keyword">,</span><span class="default">$passKey</span><span class="keyword">);</span><a name="line_33"></a></li><li id="line_34" title='|
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">35&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$passhash&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">hash</span><span class="keyword">(</span><span class="string">'sha256'</span><span class="keyword">,</span><span class="default">$passKey</span><span class="keyword">);</span><a name="line_35"></a></li><li id="line_36" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
                             &lt;div class="text"&gt;No space found after comma in function call&lt;/div&gt;
@@ -505,7 +523,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">34&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$passhash&nbsp;</span><span class="keyword">=&nbsp;(</span><span class="default">strlen</span><span class="keyword">(</span><span class="default">$passhash</span><span class="keyword">)&nbsp;&lt;&nbsp;</span><span class="default">strlen</span><span class="keyword">(</span><span class="default">$index</span><span class="keyword">))&nbsp;?&nbsp;</span><span class="default">hash</span><span class="keyword">(</span><span class="string">'sha512'</span><span class="keyword">,</span><span class="default">$passKey</span><span class="keyword">)&nbsp;:&nbsp;</span><span class="default">$passhash</span><span class="keyword">;</span><a name="line_34"></a></li><li id="line_35" title='|
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">36&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$passhash&nbsp;</span><span class="keyword">=&nbsp;(</span><span class="default">strlen</span><span class="keyword">(</span><span class="default">$passhash</span><span class="keyword">)&nbsp;&lt;&nbsp;</span><span class="default">strlen</span><span class="keyword">(</span><span class="default">$index</span><span class="keyword">))&nbsp;?&nbsp;</span><span class="default">hash</span><span class="keyword">(</span><span class="string">'sha512'</span><span class="keyword">,</span><span class="default">$passKey</span><span class="keyword">)&nbsp;:&nbsp;</span><span class="default">$passhash</span><span class="keyword">;</span><a name="line_36"></a></li><li id="line_37" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -533,7 +551,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">35&nbsp;</span><a name="line_35"></a></li><li id="line_36" title='|
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">37&nbsp;</span><a name="line_37"></a></li><li id="line_38" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -561,7 +579,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">36&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(</span><span class="default">$n</span><span class="keyword">=</span><span class="default">0</span><span class="keyword">;&nbsp;</span><span class="default">$n&nbsp;</span><span class="keyword">&lt;&nbsp;</span><span class="default">strlen</span><span class="keyword">(</span><span class="default">$index</span><span class="keyword">);&nbsp;</span><span class="default">$n</span><span class="keyword">++)&nbsp;{</span><a name="line_36"></a></li><li id="line_37" title='|
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">38&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(</span><span class="default">$n</span><span class="keyword">=</span><span class="default">0</span><span class="keyword">;&nbsp;</span><span class="default">$n&nbsp;</span><span class="keyword">&lt;&nbsp;</span><span class="default">strlen</span><span class="keyword">(</span><span class="default">$index</span><span class="keyword">);&nbsp;</span><span class="default">$n</span><span class="keyword">++)&nbsp;{</span><a name="line_38"></a></li><li id="line_39" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
                             &lt;div class="text"&gt;Space found before comma in function call&lt;/div&gt;
@@ -613,7 +631,7 @@
       Avoid variables with short names like $p. Configured minimum length is 3.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">37&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$p</span><span class="keyword">[]&nbsp;=&nbsp;&nbsp;</span><span class="default">substr</span><span class="keyword">(</span><span class="default">$passhash</span><span class="keyword">,&nbsp;</span><span class="default">$n&nbsp;</span><span class="keyword">,</span><span class="default">1</span><span class="keyword">);</span><a name="line_37"></a></li><li id="line_38" title='|
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">39&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$p</span><span class="keyword">[]&nbsp;=&nbsp;&nbsp;</span><span class="default">substr</span><span class="keyword">(</span><span class="default">$passhash</span><span class="keyword">,&nbsp;</span><span class="default">$n&nbsp;</span><span class="keyword">,</span><span class="default">1</span><span class="keyword">);</span><a name="line_39"></a></li><li id="line_40" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -641,7 +659,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">38&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_38"></a></li><li id="line_39" title='|
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">40&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_40"></a></li><li id="line_41" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
                             &lt;div class="text"&gt;Expected 1 space after comma in function call; 2 found&lt;/div&gt;
@@ -674,7 +692,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">39&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">array_multisort</span><span class="keyword">(</span><span class="default">$p</span><span class="keyword">,&nbsp;&nbsp;</span><span class="default">SORT_DESC</span><span class="keyword">,&nbsp;</span><span class="default">$i</span><span class="keyword">);</span><a name="line_39"></a></li><li id="line_40" title='|
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">41&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">array_multisort</span><span class="keyword">(</span><span class="default">$p</span><span class="keyword">,&nbsp;&nbsp;</span><span class="default">SORT_DESC</span><span class="keyword">,&nbsp;</span><span class="default">$i</span><span class="keyword">);</span><a name="line_41"></a></li><li id="line_42" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -702,7 +720,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">40&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$index&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">implode</span><span class="keyword">(</span><span class="default">$i</span><span class="keyword">);</span><a name="line_40"></a></li><li id="line_41" title='|
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">42&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$index&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">implode</span><span class="keyword">(</span><span class="default">$i</span><span class="keyword">);</span><a name="line_42"></a></li><li id="line_43" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -730,63 +748,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">41&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_41"></a></li><li id="line_42" title='|
-                        &lt;div class="tooltip"&gt;
-                            &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
-                            &lt;div class="text"&gt;
-      The method encode() has a Cyclomatic Complexity of 12. The configured cyclomatic complexity threshold is 10.
-    &lt;/div&gt;
-                        &lt;/div&gt;
-                        
-                        &lt;div class="tooltip"&gt;
-                            &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
-                            &lt;div class="text"&gt;
-      The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
-    &lt;/div&gt;
-                        &lt;/div&gt;
-                        
-                        &lt;div class="tooltip"&gt;
-                            &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
-                            &lt;div class="text"&gt;
-      The method encode() has a Cyclomatic Complexity of 12. The configured cyclomatic complexity threshold is 10.
-    &lt;/div&gt;
-                        &lt;/div&gt;
-                        
-                        &lt;div class="tooltip"&gt;
-                            &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
-                            &lt;div class="text"&gt;
-      The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
-    &lt;/div&gt;
-                        &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">42&nbsp;</span><a name="line_42"></a></li><li id="line_43" title='|
-                        &lt;div class="tooltip"&gt;
-                            &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
-                            &lt;div class="text"&gt;
-      The method encode() has a Cyclomatic Complexity of 12. The configured cyclomatic complexity threshold is 10.
-    &lt;/div&gt;
-                        &lt;/div&gt;
-                        
-                        &lt;div class="tooltip"&gt;
-                            &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
-                            &lt;div class="text"&gt;
-      The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
-    &lt;/div&gt;
-                        &lt;/div&gt;
-                        
-                        &lt;div class="tooltip"&gt;
-                            &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
-                            &lt;div class="text"&gt;
-      The method encode() has a Cyclomatic Complexity of 12. The configured cyclomatic complexity threshold is 10.
-    &lt;/div&gt;
-                        &lt;/div&gt;
-                        
-                        &lt;div class="tooltip"&gt;
-                            &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
-                            &lt;div class="text"&gt;
-      The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
-    &lt;/div&gt;
-                        &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">43&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$base&nbsp;&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">strlen</span><span class="keyword">(</span><span class="default">$index</span><span class="keyword">);</span><a name="line_43"></a></li><li id="line_44" title='|
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">43&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_43"></a></li><li id="line_44" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -815,6 +777,62 @@
     &lt;/div&gt;
                         &lt;/div&gt;
                         ' class="even hasIssues moreErrors"><span class="lineNumber">44&nbsp;</span><a name="line_44"></a></li><li id="line_45" title='|
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
+                            &lt;div class="text"&gt;
+      The method encode() has a Cyclomatic Complexity of 12. The configured cyclomatic complexity threshold is 10.
+    &lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
+                            &lt;div class="text"&gt;
+      The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
+    &lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
+                            &lt;div class="text"&gt;
+      The method encode() has a Cyclomatic Complexity of 12. The configured cyclomatic complexity threshold is 10.
+    &lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
+                            &lt;div class="text"&gt;
+      The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
+    &lt;/div&gt;
+                        &lt;/div&gt;
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">45&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$base&nbsp;&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">strlen</span><span class="keyword">(</span><span class="default">$index</span><span class="keyword">);</span><a name="line_45"></a></li><li id="line_46" title='|
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
+                            &lt;div class="text"&gt;
+      The method encode() has a Cyclomatic Complexity of 12. The configured cyclomatic complexity threshold is 10.
+    &lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
+                            &lt;div class="text"&gt;
+      The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
+    &lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
+                            &lt;div class="text"&gt;
+      The method encode() has a Cyclomatic Complexity of 12. The configured cyclomatic complexity threshold is 10.
+    &lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
+                            &lt;div class="text"&gt;
+      The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
+    &lt;/div&gt;
+                        &lt;/div&gt;
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">46&nbsp;</span><a name="line_46"></a></li><li id="line_47" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
                             &lt;div class="text"&gt;Variable &amp;quot;to_num&amp;quot; is not in valid camel caps format&lt;/div&gt;
@@ -847,7 +865,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">45&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span class="default">$to_num</span><span class="keyword">)&nbsp;{</span><a name="line_45"></a></li><li id="line_46" title='|
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">47&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span class="default">$to_num</span><span class="keyword">)&nbsp;{</span><a name="line_47"></a></li><li id="line_48" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -875,7 +893,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">46&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">//&nbsp;Digital&nbsp;number&nbsp;&nbsp;&lt;&lt;--&nbsp;&nbsp;alphabet&nbsp;letter&nbsp;code</span><a name="line_46"></a></li><li id="line_47" title='|
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">48&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">//&nbsp;Digital&nbsp;number&nbsp;&nbsp;&lt;&lt;--&nbsp;&nbsp;alphabet&nbsp;letter&nbsp;code</span><a name="line_48"></a></li><li id="line_49" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -903,7 +921,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">47&nbsp;</span><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$in&nbsp;&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">strrev</span><span class="keyword">(</span><span class="default">$in</span><span class="keyword">);</span><a name="line_47"></a></li><li id="line_48" title='|
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">49&nbsp;</span><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$in&nbsp;&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">strrev</span><span class="keyword">(</span><span class="default">$in</span><span class="keyword">);</span><a name="line_49"></a></li><li id="line_50" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -931,7 +949,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">48&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$out&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">0</span><span class="keyword">;</span><a name="line_48"></a></li><li id="line_49" title='|
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">50&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$out&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">0</span><span class="keyword">;</span><a name="line_50"></a></li><li id="line_51" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -959,7 +977,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">49&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$len&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">strlen</span><span class="keyword">(</span><span class="default">$in</span><span class="keyword">)&nbsp;-&nbsp;</span><span class="default">1</span><span class="keyword">;</span><a name="line_49"></a></li><li id="line_50" title='|
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">51&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$len&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">strlen</span><span class="keyword">(</span><span class="default">$in</span><span class="keyword">)&nbsp;-&nbsp;</span><span class="default">1</span><span class="keyword">;</span><a name="line_51"></a></li><li id="line_52" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -987,7 +1005,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">50&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(</span><span class="default">$t&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">0</span><span class="keyword">;&nbsp;</span><span class="default">$t&nbsp;</span><span class="keyword">&lt;=&nbsp;</span><span class="default">$len</span><span class="keyword">;&nbsp;</span><span class="default">$t</span><span class="keyword">++)&nbsp;{</span><a name="line_50"></a></li><li id="line_51" title='|
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">52&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(</span><span class="default">$t&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">0</span><span class="keyword">;&nbsp;</span><span class="default">$t&nbsp;</span><span class="keyword">&lt;=&nbsp;</span><span class="default">$len</span><span class="keyword">;&nbsp;</span><span class="default">$t</span><span class="keyword">++)&nbsp;{</span><a name="line_52"></a></li><li id="line_53" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -1015,7 +1033,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">51&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$bcpow&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">bcpow</span><span class="keyword">(</span><span class="default">$base</span><span class="keyword">,&nbsp;</span><span class="default">$len&nbsp;</span><span class="keyword">-&nbsp;</span><span class="default">$t</span><span class="keyword">);</span><a name="line_51"></a></li><li id="line_52" title='|
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">53&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$bcpow&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">bcpow</span><span class="keyword">(</span><span class="default">$base</span><span class="keyword">,&nbsp;</span><span class="default">$len&nbsp;</span><span class="keyword">-&nbsp;</span><span class="default">$t</span><span class="keyword">);</span><a name="line_53"></a></li><li id="line_54" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -1043,7 +1061,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">52&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$out&nbsp;&nbsp;&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">$out&nbsp;</span><span class="keyword">+&nbsp;</span><span class="default">strpos</span><span class="keyword">(</span><span class="default">$index</span><span class="keyword">,&nbsp;</span><span class="default">substr</span><span class="keyword">(</span><span class="default">$in</span><span class="keyword">,&nbsp;</span><span class="default">$t</span><span class="keyword">,&nbsp;</span><span class="default">1</span><span class="keyword">))&nbsp;*&nbsp;</span><span class="default">$bcpow</span><span class="keyword">;</span><a name="line_52"></a></li><li id="line_53" title='|
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">54&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$out&nbsp;&nbsp;&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">$out&nbsp;</span><span class="keyword">+&nbsp;</span><span class="default">strpos</span><span class="keyword">(</span><span class="default">$index</span><span class="keyword">,&nbsp;</span><span class="default">substr</span><span class="keyword">(</span><span class="default">$in</span><span class="keyword">,&nbsp;</span><span class="default">$t</span><span class="keyword">,&nbsp;</span><span class="default">1</span><span class="keyword">))&nbsp;*&nbsp;</span><span class="default">$bcpow</span><span class="keyword">;</span><a name="line_54"></a></li><li id="line_55" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -1071,7 +1089,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">53&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_53"></a></li><li id="line_54" title='|
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">55&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_55"></a></li><li id="line_56" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -1099,7 +1117,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">54&nbsp;</span><a name="line_54"></a></li><li id="line_55" title='|
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">56&nbsp;</span><a name="line_56"></a></li><li id="line_57" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
                             &lt;div class="text"&gt;Variable &amp;quot;pad_up&amp;quot; is not in valid camel caps format&lt;/div&gt;
@@ -1132,7 +1150,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">55&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span class="default">is_numeric</span><span class="keyword">(</span><span class="default">$pad_up</span><span class="keyword">))&nbsp;{</span><a name="line_55"></a></li><li id="line_56" title='|
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">57&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span class="default">is_numeric</span><span class="keyword">(</span><span class="default">$pad_up</span><span class="keyword">))&nbsp;{</span><a name="line_57"></a></li><li id="line_58" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
                             &lt;div class="text"&gt;Variable &amp;quot;pad_up&amp;quot; is not in valid camel caps format&lt;/div&gt;
@@ -1165,7 +1183,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">56&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$pad_up</span><span class="keyword">--;</span><a name="line_56"></a></li><li id="line_57" title='|
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">58&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$pad_up</span><span class="keyword">--;</span><a name="line_58"></a></li><li id="line_59" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
                             &lt;div class="text"&gt;Variable &amp;quot;pad_up&amp;quot; is not in valid camel caps format&lt;/div&gt;
@@ -1198,7 +1216,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">57&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span class="default">$pad_up&nbsp;</span><span class="keyword">&gt;&nbsp;</span><span class="default">0</span><span class="keyword">)&nbsp;{</span><a name="line_57"></a></li><li id="line_58" title='|
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">59&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span class="default">$pad_up&nbsp;</span><span class="keyword">&gt;&nbsp;</span><span class="default">0</span><span class="keyword">)&nbsp;{</span><a name="line_59"></a></li><li id="line_60" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
                             &lt;div class="text"&gt;Variable &amp;quot;pad_up&amp;quot; is not in valid camel caps format&lt;/div&gt;
@@ -1231,7 +1249,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">58&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$out&nbsp;</span><span class="keyword">-=&nbsp;</span><span class="default">pow</span><span class="keyword">(</span><span class="default">$base</span><span class="keyword">,&nbsp;</span><span class="default">$pad_up</span><span class="keyword">);</span><a name="line_58"></a></li><li id="line_59" title='|
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">60&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$out&nbsp;</span><span class="keyword">-=&nbsp;</span><span class="default">pow</span><span class="keyword">(</span><span class="default">$base</span><span class="keyword">,&nbsp;</span><span class="default">$pad_up</span><span class="keyword">);</span><a name="line_60"></a></li><li id="line_61" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -1259,7 +1277,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">59&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_59"></a></li><li id="line_60" title='|
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">61&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_61"></a></li><li id="line_62" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -1287,7 +1305,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">60&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_60"></a></li><li id="line_61" title='|
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">62&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_62"></a></li><li id="line_63" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -1315,7 +1333,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">61&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$out&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">sprintf</span><span class="keyword">(</span><span class="string">'%F'</span><span class="keyword">,&nbsp;</span><span class="default">$out</span><span class="keyword">);</span><a name="line_61"></a></li><li id="line_62" title='|
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">63&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$out&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">sprintf</span><span class="keyword">(</span><span class="string">'%F'</span><span class="keyword">,&nbsp;</span><span class="default">$out</span><span class="keyword">);</span><a name="line_63"></a></li><li id="line_64" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -1343,12 +1361,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">62&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$out&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">substr</span><span class="keyword">(</span><span class="default">$out</span><span class="keyword">,&nbsp;</span><span class="default">0</span><span class="keyword">,&nbsp;</span><span class="default">strpos</span><span class="keyword">(</span><span class="default">$out</span><span class="keyword">,&nbsp;</span><span class="string">'.'</span><span class="keyword">));</span><a name="line_62"></a></li><li id="line_63" title='|
-                        &lt;div class="tooltip"&gt;
-                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
-                            &lt;div class="text"&gt;Please trim any trailing whitespace&lt;/div&gt;
-                        &lt;/div&gt;
-                        
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">64&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$out&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">substr</span><span class="keyword">(</span><span class="default">$out</span><span class="keyword">,&nbsp;</span><span class="default">0</span><span class="keyword">,&nbsp;</span><span class="default">strpos</span><span class="keyword">(</span><span class="default">$out</span><span class="keyword">,&nbsp;</span><span class="string">'.'</span><span class="keyword">));</span><a name="line_64"></a></li><li id="line_65" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -1376,7 +1389,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">63&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{&nbsp;</span><a name="line_63"></a></li><li id="line_64" title='|
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">65&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{</span><a name="line_65"></a></li><li id="line_66" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -1404,7 +1417,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">64&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">//&nbsp;Digital&nbsp;number&nbsp;&nbsp;--&gt;&gt;&nbsp;&nbsp;alphabet&nbsp;letter&nbsp;code</span><a name="line_64"></a></li><li id="line_65" title='|
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">66&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">//&nbsp;Digital&nbsp;number&nbsp;&nbsp;--&gt;&gt;&nbsp;&nbsp;alphabet&nbsp;letter&nbsp;code</span><a name="line_66"></a></li><li id="line_67" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
                             &lt;div class="text"&gt;Variable &amp;quot;pad_up&amp;quot; is not in valid camel caps format&lt;/div&gt;
@@ -1437,7 +1450,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">65&nbsp;</span><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">if&nbsp;(</span><span class="default">is_numeric</span><span class="keyword">(</span><span class="default">$pad_up</span><span class="keyword">))&nbsp;{</span><a name="line_65"></a></li><li id="line_66" title='|
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">67&nbsp;</span><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">if&nbsp;(</span><span class="default">is_numeric</span><span class="keyword">(</span><span class="default">$pad_up</span><span class="keyword">))&nbsp;{</span><a name="line_67"></a></li><li id="line_68" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
                             &lt;div class="text"&gt;Variable &amp;quot;pad_up&amp;quot; is not in valid camel caps format&lt;/div&gt;
@@ -1470,7 +1483,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">66&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$pad_up</span><span class="keyword">--;</span><a name="line_66"></a></li><li id="line_67" title='|
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">68&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$pad_up</span><span class="keyword">--;</span><a name="line_68"></a></li><li id="line_69" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
                             &lt;div class="text"&gt;Variable &amp;quot;pad_up&amp;quot; is not in valid camel caps format&lt;/div&gt;
@@ -1503,7 +1516,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">67&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span class="default">$pad_up&nbsp;</span><span class="keyword">&gt;&nbsp;</span><span class="default">0</span><span class="keyword">)&nbsp;{</span><a name="line_67"></a></li><li id="line_68" title='|
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">69&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span class="default">$pad_up&nbsp;</span><span class="keyword">&gt;&nbsp;</span><span class="default">0</span><span class="keyword">)&nbsp;{</span><a name="line_69"></a></li><li id="line_70" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
                             &lt;div class="text"&gt;Variable &amp;quot;pad_up&amp;quot; is not in valid camel caps format&lt;/div&gt;
@@ -1536,7 +1549,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">68&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$in&nbsp;</span><span class="keyword">+=&nbsp;</span><span class="default">pow</span><span class="keyword">(</span><span class="default">$base</span><span class="keyword">,&nbsp;</span><span class="default">$pad_up</span><span class="keyword">);</span><a name="line_68"></a></li><li id="line_69" title='|
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">70&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$in&nbsp;</span><span class="keyword">+=&nbsp;</span><span class="default">pow</span><span class="keyword">(</span><span class="default">$base</span><span class="keyword">,&nbsp;</span><span class="default">$pad_up</span><span class="keyword">);</span><a name="line_70"></a></li><li id="line_71" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -1564,7 +1577,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">69&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_69"></a></li><li id="line_70" title='|
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">71&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_71"></a></li><li id="line_72" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -1592,7 +1605,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">70&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_70"></a></li><li id="line_71" title='|
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">72&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_72"></a></li><li id="line_73" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -1620,7 +1633,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">71&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$out&nbsp;</span><span class="keyword">=&nbsp;</span><span class="string">""</span><span class="keyword">;</span><a name="line_71"></a></li><li id="line_72" title='|
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">73&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$out&nbsp;</span><span class="keyword">=&nbsp;</span><span class="string">""</span><span class="keyword">;</span><a name="line_73"></a></li><li id="line_74" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -1648,7 +1661,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">72&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(</span><span class="default">$t&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">floor</span><span class="keyword">(</span><span class="default">log</span><span class="keyword">(</span><span class="default">$in</span><span class="keyword">,&nbsp;</span><span class="default">$base</span><span class="keyword">));&nbsp;</span><span class="default">$t&nbsp;</span><span class="keyword">&gt;=&nbsp;</span><span class="default">0</span><span class="keyword">;&nbsp;</span><span class="default">$t</span><span class="keyword">--)&nbsp;{</span><a name="line_72"></a></li><li id="line_73" title='|
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">74&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(</span><span class="default">$t&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">floor</span><span class="keyword">(</span><span class="default">log</span><span class="keyword">(</span><span class="default">$in</span><span class="keyword">,&nbsp;</span><span class="default">$base</span><span class="keyword">));&nbsp;</span><span class="default">$t&nbsp;</span><span class="keyword">&gt;=&nbsp;</span><span class="default">0</span><span class="keyword">;&nbsp;</span><span class="default">$t</span><span class="keyword">--)&nbsp;{</span><a name="line_74"></a></li><li id="line_75" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -1676,7 +1689,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">73&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$bcp&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">bcpow</span><span class="keyword">(</span><span class="default">$base</span><span class="keyword">,&nbsp;</span><span class="default">$t</span><span class="keyword">);</span><a name="line_73"></a></li><li id="line_74" title='|
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">75&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$bcp&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">bcpow</span><span class="keyword">(</span><span class="default">$base</span><span class="keyword">,&nbsp;</span><span class="default">$t</span><span class="keyword">);</span><a name="line_75"></a></li><li id="line_76" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -1718,7 +1731,7 @@
       Avoid variables with short names like $a. Configured minimum length is 3.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">74&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$a&nbsp;&nbsp;&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">floor</span><span class="keyword">(</span><span class="default">$in&nbsp;</span><span class="keyword">/&nbsp;</span><span class="default">$bcp</span><span class="keyword">)&nbsp;%&nbsp;</span><span class="default">$base</span><span class="keyword">;</span><a name="line_74"></a></li><li id="line_75" title='|
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">76&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$a&nbsp;&nbsp;&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">floor</span><span class="keyword">(</span><span class="default">$in&nbsp;</span><span class="keyword">/&nbsp;</span><span class="default">$bcp</span><span class="keyword">)&nbsp;%&nbsp;</span><span class="default">$base</span><span class="keyword">;</span><a name="line_76"></a></li><li id="line_77" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -1746,7 +1759,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">75&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$out&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">$out&nbsp;</span><span class="keyword">.&nbsp;</span><span class="default">substr</span><span class="keyword">(</span><span class="default">$index</span><span class="keyword">,&nbsp;</span><span class="default">$a</span><span class="keyword">,&nbsp;</span><span class="default">1</span><span class="keyword">);</span><a name="line_75"></a></li><li id="line_76" title='|
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">77&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$out&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">$out&nbsp;</span><span class="keyword">.&nbsp;</span><span class="default">substr</span><span class="keyword">(</span><span class="default">$index</span><span class="keyword">,&nbsp;</span><span class="default">$a</span><span class="keyword">,&nbsp;</span><span class="default">1</span><span class="keyword">);</span><a name="line_77"></a></li><li id="line_78" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -1774,7 +1787,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">76&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$in&nbsp;&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">$in&nbsp;</span><span class="keyword">-&nbsp;(</span><span class="default">$a&nbsp;</span><span class="keyword">*&nbsp;</span><span class="default">$bcp</span><span class="keyword">);</span><a name="line_76"></a></li><li id="line_77" title='|
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">78&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$in&nbsp;&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">$in&nbsp;</span><span class="keyword">-&nbsp;(</span><span class="default">$a&nbsp;</span><span class="keyword">*&nbsp;</span><span class="default">$bcp</span><span class="keyword">);</span><a name="line_78"></a></li><li id="line_79" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -1802,7 +1815,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">77&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_77"></a></li><li id="line_78" title='|
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">79&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_79"></a></li><li id="line_80" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -1830,7 +1843,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">78&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$out&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">strrev</span><span class="keyword">(</span><span class="default">$out</span><span class="keyword">);&nbsp;</span><span class="comment">//&nbsp;reverse</span><a name="line_78"></a></li><li id="line_79" title='|
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">80&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$out&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">strrev</span><span class="keyword">(</span><span class="default">$out</span><span class="keyword">);&nbsp;</span><span class="comment">//&nbsp;reverse</span><a name="line_80"></a></li><li id="line_81" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -1858,12 +1871,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">79&nbsp;</span><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">}</span><a name="line_79"></a></li><li id="line_80" title='|
-                        &lt;div class="tooltip"&gt;
-                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
-                            &lt;div class="text"&gt;Missing blank line before return statement&lt;/div&gt;
-                        &lt;/div&gt;
-                        
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">81&nbsp;</span><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">}</span><a name="line_81"></a></li><li id="line_82" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -1891,7 +1899,7 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="even hasIssues moreErrors"><span class="lineNumber">80&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span class="default">$out</span><span class="keyword">;</span><a name="line_80"></a></li><li id="line_81" title='|
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">82&nbsp;</span><a name="line_82"></a></li><li id="line_83" title='|
                         &lt;div class="tooltip"&gt;
                             &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
                             &lt;div class="text"&gt;
@@ -1919,8 +1927,36 @@
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     &lt;/div&gt;
                         &lt;/div&gt;
-                        ' class="odd hasIssues moreErrors"><span class="lineNumber">81&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_81"></a></li><li id="line_82" class="even"><span class="lineNumber">82&nbsp;</span><span class="keyword">}</span><span>
-</span><a name="line_82"></a></li></ol>
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">83&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span class="default">$out</span><span class="keyword">;</span><a name="line_83"></a></li><li id="line_84" title='|
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
+                            &lt;div class="text"&gt;
+      The method encode() has a Cyclomatic Complexity of 12. The configured cyclomatic complexity threshold is 10.
+    &lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
+                            &lt;div class="text"&gt;
+      The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
+    &lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
+                            &lt;div class="text"&gt;
+      The method encode() has a Cyclomatic Complexity of 12. The configured cyclomatic complexity threshold is 10.
+    &lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title PMD"&gt;PMD&lt;/div&gt;
+                            &lt;div class="text"&gt;
+      The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
+    &lt;/div&gt;
+                        &lt;/div&gt;
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">84&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_84"></a></li><li id="line_85" class="odd"><span class="lineNumber">85&nbsp;</span><span class="keyword">}</span><span>
+</span><a name="line_85"></a></li></ol>
             
             <div id="sidebar">
                 <table cellpadding="3">
@@ -1947,34 +1983,15 @@
                         
                         <tr class="Checkstyle">
                             <td align="center">
-                                <a href="#line_20" onclick="switchLine('line_20')">
-                                20</a>
+                                <a href="#line_22" onclick="switchLine('line_22')">
+                                22</a>
                             </td>
                             <td align="center">
-                                <a href="#line_20" onclick="switchLine('line_20'); new Effect.Highlight('line_20-20', {duration: 1.5}); return false">
-                                20</a>
+                                <a href="#line_22" onclick="switchLine('line_22'); new Effect.Highlight('line_22-22', {duration: 1.5}); return false">
+                                22</a>
                             </td>
                             <td>
-                                <a href="#line_20" onclick="switchLine('line_20'); new Effect.Highlight('line_20-20', {duration: 1.5}); return false">
-                                Opening brace of a class must be on the line after the definition</a>
-                            </td>
-                            <td>
-                                Checkstyle                            </td>
-                            <td>
-                                error                            </td>
-                        </tr>
-                        
-                        <tr class="Checkstyle">
-                            <td align="center">
-                                <a href="#line_21" onclick="switchLine('line_21')">
-                                21</a>
-                            </td>
-                            <td align="center">
-                                <a href="#line_21" onclick="switchLine('line_21'); new Effect.Highlight('line_21-21', {duration: 1.5}); return false">
-                                21</a>
-                            </td>
-                            <td>
-                                <a href="#line_21" onclick="switchLine('line_21'); new Effect.Highlight('line_21-21', {duration: 1.5}); return false">
+                                <a href="#line_22" onclick="switchLine('line_22'); new Effect.Highlight('line_22-22', {duration: 1.5}); return false">
                                 Missing function doc comment</a>
                             </td>
                             <td>
@@ -1985,15 +2002,15 @@
                         
                         <tr class="Checkstyle">
                             <td align="center">
-                                <a href="#line_21" onclick="switchLine('line_21')">
-                                21</a>
+                                <a href="#line_22" onclick="switchLine('line_22')">
+                                22</a>
                             </td>
                             <td align="center">
-                                <a href="#line_21" onclick="switchLine('line_21'); new Effect.Highlight('line_21-21', {duration: 1.5}); return false">
-                                21</a>
+                                <a href="#line_22" onclick="switchLine('line_22'); new Effect.Highlight('line_22-22', {duration: 1.5}); return false">
+                                22</a>
                             </td>
                             <td>
-                                <a href="#line_21" onclick="switchLine('line_21'); new Effect.Highlight('line_21-21', {duration: 1.5}); return false">
+                                <a href="#line_22" onclick="switchLine('line_22'); new Effect.Highlight('line_22-22', {duration: 1.5}); return false">
                                 Variable &quot;to_num&quot; is not in valid camel caps format</a>
                             </td>
                             <td>
@@ -2004,15 +2021,15 @@
                         
                         <tr class="Checkstyle">
                             <td align="center">
-                                <a href="#line_21" onclick="switchLine('line_21')">
-                                21</a>
+                                <a href="#line_22" onclick="switchLine('line_22')">
+                                22</a>
                             </td>
                             <td align="center">
-                                <a href="#line_21" onclick="switchLine('line_21'); new Effect.Highlight('line_21-21', {duration: 1.5}); return false">
-                                21</a>
+                                <a href="#line_22" onclick="switchLine('line_22'); new Effect.Highlight('line_22-22', {duration: 1.5}); return false">
+                                22</a>
                             </td>
                             <td>
-                                <a href="#line_21" onclick="switchLine('line_21'); new Effect.Highlight('line_21-21', {duration: 1.5}); return false">
+                                <a href="#line_22" onclick="switchLine('line_22'); new Effect.Highlight('line_22-22', {duration: 1.5}); return false">
                                 Variable &quot;pad_up&quot; is not in valid camel caps format</a>
                             </td>
                             <td>
@@ -2023,34 +2040,15 @@
                         
                         <tr class="Checkstyle">
                             <td align="center">
-                                <a href="#line_21" onclick="switchLine('line_21')">
-                                21</a>
+                                <a href="#line_32" onclick="switchLine('line_32')">
+                                32</a>
                             </td>
                             <td align="center">
-                                <a href="#line_21" onclick="switchLine('line_21'); new Effect.Highlight('line_21-21', {duration: 1.5}); return false">
-                                21</a>
+                                <a href="#line_32" onclick="switchLine('line_32'); new Effect.Highlight('line_32-32', {duration: 1.5}); return false">
+                                32</a>
                             </td>
                             <td>
-                                <a href="#line_21" onclick="switchLine('line_21'); new Effect.Highlight('line_21-21', {duration: 1.5}); return false">
-                                Opening brace should be on a new line</a>
-                            </td>
-                            <td>
-                                Checkstyle                            </td>
-                            <td>
-                                error                            </td>
-                        </tr>
-                        
-                        <tr class="Checkstyle">
-                            <td align="center">
-                                <a href="#line_30" onclick="switchLine('line_30')">
-                                30</a>
-                            </td>
-                            <td align="center">
-                                <a href="#line_30" onclick="switchLine('line_30'); new Effect.Highlight('line_30-30', {duration: 1.5}); return false">
-                                30</a>
-                            </td>
-                            <td>
-                                <a href="#line_30" onclick="switchLine('line_30'); new Effect.Highlight('line_30-30', {duration: 1.5}); return false">
+                                <a href="#line_32" onclick="switchLine('line_32'); new Effect.Highlight('line_32-32', {duration: 1.5}); return false">
                                 No space found after comma in function call</a>
                             </td>
                             <td>
@@ -2061,15 +2059,15 @@
                         
                         <tr class="Checkstyle">
                             <td align="center">
-                                <a href="#line_30" onclick="switchLine('line_30')">
-                                30</a>
+                                <a href="#line_32" onclick="switchLine('line_32')">
+                                32</a>
                             </td>
                             <td align="center">
-                                <a href="#line_30" onclick="switchLine('line_30'); new Effect.Highlight('line_30-30', {duration: 1.5}); return false">
-                                30</a>
+                                <a href="#line_32" onclick="switchLine('line_32'); new Effect.Highlight('line_32-32', {duration: 1.5}); return false">
+                                32</a>
                             </td>
                             <td>
-                                <a href="#line_30" onclick="switchLine('line_30'); new Effect.Highlight('line_30-30', {duration: 1.5}); return false">
+                                <a href="#line_32" onclick="switchLine('line_32'); new Effect.Highlight('line_32-32', {duration: 1.5}); return false">
                                 Space found before comma in function call</a>
                             </td>
                             <td>
@@ -2080,15 +2078,15 @@
                         
                         <tr class="Checkstyle">
                             <td align="center">
-                                <a href="#line_30" onclick="switchLine('line_30')">
-                                30</a>
+                                <a href="#line_32" onclick="switchLine('line_32')">
+                                32</a>
                             </td>
                             <td align="center">
-                                <a href="#line_30" onclick="switchLine('line_30'); new Effect.Highlight('line_30-30', {duration: 1.5}); return false">
-                                30</a>
+                                <a href="#line_32" onclick="switchLine('line_32'); new Effect.Highlight('line_32-32', {duration: 1.5}); return false">
+                                32</a>
                             </td>
                             <td>
-                                <a href="#line_30" onclick="switchLine('line_30'); new Effect.Highlight('line_30-30', {duration: 1.5}); return false">
+                                <a href="#line_32" onclick="switchLine('line_32'); new Effect.Highlight('line_32-32', {duration: 1.5}); return false">
                                 No space found after comma in function call</a>
                             </td>
                             <td>
@@ -2099,15 +2097,15 @@
                         
                         <tr class="Checkstyle">
                             <td align="center">
-                                <a href="#line_30" onclick="switchLine('line_30')">
-                                30</a>
+                                <a href="#line_32" onclick="switchLine('line_32')">
+                                32</a>
                             </td>
                             <td align="center">
-                                <a href="#line_30" onclick="switchLine('line_30'); new Effect.Highlight('line_30-30', {duration: 1.5}); return false">
-                                30</a>
+                                <a href="#line_32" onclick="switchLine('line_32'); new Effect.Highlight('line_32-32', {duration: 1.5}); return false">
+                                32</a>
                             </td>
                             <td>
-                                <a href="#line_30" onclick="switchLine('line_30'); new Effect.Highlight('line_30-30', {duration: 1.5}); return false">
+                                <a href="#line_32" onclick="switchLine('line_32'); new Effect.Highlight('line_32-32', {duration: 1.5}); return false">
                                 Space after opening parenthesis of function call prohibited</a>
                             </td>
                             <td>
@@ -2118,15 +2116,15 @@
                         
                         <tr class="Checkstyle">
                             <td align="center">
-                                <a href="#line_33" onclick="switchLine('line_33')">
-                                33</a>
+                                <a href="#line_35" onclick="switchLine('line_35')">
+                                35</a>
                             </td>
                             <td align="center">
-                                <a href="#line_33" onclick="switchLine('line_33'); new Effect.Highlight('line_33-33', {duration: 1.5}); return false">
-                                33</a>
+                                <a href="#line_35" onclick="switchLine('line_35'); new Effect.Highlight('line_35-35', {duration: 1.5}); return false">
+                                35</a>
                             </td>
                             <td>
-                                <a href="#line_33" onclick="switchLine('line_33'); new Effect.Highlight('line_33-33', {duration: 1.5}); return false">
+                                <a href="#line_35" onclick="switchLine('line_35'); new Effect.Highlight('line_35-35', {duration: 1.5}); return false">
                                 No space found after comma in function call</a>
                             </td>
                             <td>
@@ -2137,53 +2135,15 @@
                         
                         <tr class="Checkstyle">
                             <td align="center">
-                                <a href="#line_34" onclick="switchLine('line_34')">
-                                34</a>
+                                <a href="#line_36" onclick="switchLine('line_36')">
+                                36</a>
                             </td>
                             <td align="center">
-                                <a href="#line_34" onclick="switchLine('line_34'); new Effect.Highlight('line_34-34', {duration: 1.5}); return false">
-                                34</a>
+                                <a href="#line_36" onclick="switchLine('line_36'); new Effect.Highlight('line_36-36', {duration: 1.5}); return false">
+                                36</a>
                             </td>
                             <td>
-                                <a href="#line_34" onclick="switchLine('line_34'); new Effect.Highlight('line_34-34', {duration: 1.5}); return false">
-                                No space found after comma in function call</a>
-                            </td>
-                            <td>
-                                Checkstyle                            </td>
-                            <td>
-                                error                            </td>
-                        </tr>
-                        
-                        <tr class="Checkstyle">
-                            <td align="center">
-                                <a href="#line_37" onclick="switchLine('line_37')">
-                                37</a>
-                            </td>
-                            <td align="center">
-                                <a href="#line_37" onclick="switchLine('line_37'); new Effect.Highlight('line_37-37', {duration: 1.5}); return false">
-                                37</a>
-                            </td>
-                            <td>
-                                <a href="#line_37" onclick="switchLine('line_37'); new Effect.Highlight('line_37-37', {duration: 1.5}); return false">
-                                Space found before comma in function call</a>
-                            </td>
-                            <td>
-                                Checkstyle                            </td>
-                            <td>
-                                error                            </td>
-                        </tr>
-                        
-                        <tr class="Checkstyle">
-                            <td align="center">
-                                <a href="#line_37" onclick="switchLine('line_37')">
-                                37</a>
-                            </td>
-                            <td align="center">
-                                <a href="#line_37" onclick="switchLine('line_37'); new Effect.Highlight('line_37-37', {duration: 1.5}); return false">
-                                37</a>
-                            </td>
-                            <td>
-                                <a href="#line_37" onclick="switchLine('line_37'); new Effect.Highlight('line_37-37', {duration: 1.5}); return false">
+                                <a href="#line_36" onclick="switchLine('line_36'); new Effect.Highlight('line_36-36', {duration: 1.5}); return false">
                                 No space found after comma in function call</a>
                             </td>
                             <td>
@@ -2203,6 +2163,44 @@
                             </td>
                             <td>
                                 <a href="#line_39" onclick="switchLine('line_39'); new Effect.Highlight('line_39-39', {duration: 1.5}); return false">
+                                Space found before comma in function call</a>
+                            </td>
+                            <td>
+                                Checkstyle                            </td>
+                            <td>
+                                error                            </td>
+                        </tr>
+                        
+                        <tr class="Checkstyle">
+                            <td align="center">
+                                <a href="#line_39" onclick="switchLine('line_39')">
+                                39</a>
+                            </td>
+                            <td align="center">
+                                <a href="#line_39" onclick="switchLine('line_39'); new Effect.Highlight('line_39-39', {duration: 1.5}); return false">
+                                39</a>
+                            </td>
+                            <td>
+                                <a href="#line_39" onclick="switchLine('line_39'); new Effect.Highlight('line_39-39', {duration: 1.5}); return false">
+                                No space found after comma in function call</a>
+                            </td>
+                            <td>
+                                Checkstyle                            </td>
+                            <td>
+                                error                            </td>
+                        </tr>
+                        
+                        <tr class="Checkstyle">
+                            <td align="center">
+                                <a href="#line_41" onclick="switchLine('line_41')">
+                                41</a>
+                            </td>
+                            <td align="center">
+                                <a href="#line_41" onclick="switchLine('line_41'); new Effect.Highlight('line_41-41', {duration: 1.5}); return false">
+                                41</a>
+                            </td>
+                            <td>
+                                <a href="#line_41" onclick="switchLine('line_41'); new Effect.Highlight('line_41-41', {duration: 1.5}); return false">
                                 Expected 1 space after comma in function call; 2 found</a>
                             </td>
                             <td>
@@ -2213,54 +2211,16 @@
                         
                         <tr class="Checkstyle">
                             <td align="center">
-                                <a href="#line_45" onclick="switchLine('line_45')">
-                                45</a>
+                                <a href="#line_47" onclick="switchLine('line_47')">
+                                47</a>
                             </td>
                             <td align="center">
-                                <a href="#line_45" onclick="switchLine('line_45'); new Effect.Highlight('line_45-45', {duration: 1.5}); return false">
-                                45</a>
+                                <a href="#line_47" onclick="switchLine('line_47'); new Effect.Highlight('line_47-47', {duration: 1.5}); return false">
+                                47</a>
                             </td>
                             <td>
-                                <a href="#line_45" onclick="switchLine('line_45'); new Effect.Highlight('line_45-45', {duration: 1.5}); return false">
+                                <a href="#line_47" onclick="switchLine('line_47'); new Effect.Highlight('line_47-47', {duration: 1.5}); return false">
                                 Variable &quot;to_num&quot; is not in valid camel caps format</a>
-                            </td>
-                            <td>
-                                Checkstyle                            </td>
-                            <td>
-                                error                            </td>
-                        </tr>
-                        
-                        <tr class="Checkstyle">
-                            <td align="center">
-                                <a href="#line_55" onclick="switchLine('line_55')">
-                                55</a>
-                            </td>
-                            <td align="center">
-                                <a href="#line_55" onclick="switchLine('line_55'); new Effect.Highlight('line_55-55', {duration: 1.5}); return false">
-                                55</a>
-                            </td>
-                            <td>
-                                <a href="#line_55" onclick="switchLine('line_55'); new Effect.Highlight('line_55-55', {duration: 1.5}); return false">
-                                Variable &quot;pad_up&quot; is not in valid camel caps format</a>
-                            </td>
-                            <td>
-                                Checkstyle                            </td>
-                            <td>
-                                error                            </td>
-                        </tr>
-                        
-                        <tr class="Checkstyle">
-                            <td align="center">
-                                <a href="#line_56" onclick="switchLine('line_56')">
-                                56</a>
-                            </td>
-                            <td align="center">
-                                <a href="#line_56" onclick="switchLine('line_56'); new Effect.Highlight('line_56-56', {duration: 1.5}); return false">
-                                56</a>
-                            </td>
-                            <td>
-                                <a href="#line_56" onclick="switchLine('line_56'); new Effect.Highlight('line_56-56', {duration: 1.5}); return false">
-                                Variable &quot;pad_up&quot; is not in valid camel caps format</a>
                             </td>
                             <td>
                                 Checkstyle                            </td>
@@ -2308,34 +2268,15 @@
                         
                         <tr class="Checkstyle">
                             <td align="center">
-                                <a href="#line_63" onclick="switchLine('line_63')">
-                                63</a>
+                                <a href="#line_59" onclick="switchLine('line_59')">
+                                59</a>
                             </td>
                             <td align="center">
-                                <a href="#line_63" onclick="switchLine('line_63'); new Effect.Highlight('line_63-63', {duration: 1.5}); return false">
-                                63</a>
+                                <a href="#line_59" onclick="switchLine('line_59'); new Effect.Highlight('line_59-59', {duration: 1.5}); return false">
+                                59</a>
                             </td>
                             <td>
-                                <a href="#line_63" onclick="switchLine('line_63'); new Effect.Highlight('line_63-63', {duration: 1.5}); return false">
-                                Please trim any trailing whitespace</a>
-                            </td>
-                            <td>
-                                Checkstyle                            </td>
-                            <td>
-                                warning                            </td>
-                        </tr>
-                        
-                        <tr class="Checkstyle">
-                            <td align="center">
-                                <a href="#line_65" onclick="switchLine('line_65')">
-                                65</a>
-                            </td>
-                            <td align="center">
-                                <a href="#line_65" onclick="switchLine('line_65'); new Effect.Highlight('line_65-65', {duration: 1.5}); return false">
-                                65</a>
-                            </td>
-                            <td>
-                                <a href="#line_65" onclick="switchLine('line_65'); new Effect.Highlight('line_65-65', {duration: 1.5}); return false">
+                                <a href="#line_59" onclick="switchLine('line_59'); new Effect.Highlight('line_59-59', {duration: 1.5}); return false">
                                 Variable &quot;pad_up&quot; is not in valid camel caps format</a>
                             </td>
                             <td>
@@ -2346,15 +2287,15 @@
                         
                         <tr class="Checkstyle">
                             <td align="center">
-                                <a href="#line_66" onclick="switchLine('line_66')">
-                                66</a>
+                                <a href="#line_60" onclick="switchLine('line_60')">
+                                60</a>
                             </td>
                             <td align="center">
-                                <a href="#line_66" onclick="switchLine('line_66'); new Effect.Highlight('line_66-66', {duration: 1.5}); return false">
-                                66</a>
+                                <a href="#line_60" onclick="switchLine('line_60'); new Effect.Highlight('line_60-60', {duration: 1.5}); return false">
+                                60</a>
                             </td>
                             <td>
-                                <a href="#line_66" onclick="switchLine('line_66'); new Effect.Highlight('line_66-66', {duration: 1.5}); return false">
+                                <a href="#line_60" onclick="switchLine('line_60'); new Effect.Highlight('line_60-60', {duration: 1.5}); return false">
                                 Variable &quot;pad_up&quot; is not in valid camel caps format</a>
                             </td>
                             <td>
@@ -2403,16 +2344,35 @@
                         
                         <tr class="Checkstyle">
                             <td align="center">
-                                <a href="#line_80" onclick="switchLine('line_80')">
-                                80</a>
+                                <a href="#line_69" onclick="switchLine('line_69')">
+                                69</a>
                             </td>
                             <td align="center">
-                                <a href="#line_80" onclick="switchLine('line_80'); new Effect.Highlight('line_80-80', {duration: 1.5}); return false">
-                                80</a>
+                                <a href="#line_69" onclick="switchLine('line_69'); new Effect.Highlight('line_69-69', {duration: 1.5}); return false">
+                                69</a>
                             </td>
                             <td>
-                                <a href="#line_80" onclick="switchLine('line_80'); new Effect.Highlight('line_80-80', {duration: 1.5}); return false">
-                                Missing blank line before return statement</a>
+                                <a href="#line_69" onclick="switchLine('line_69'); new Effect.Highlight('line_69-69', {duration: 1.5}); return false">
+                                Variable &quot;pad_up&quot; is not in valid camel caps format</a>
+                            </td>
+                            <td>
+                                Checkstyle                            </td>
+                            <td>
+                                error                            </td>
+                        </tr>
+                        
+                        <tr class="Checkstyle">
+                            <td align="center">
+                                <a href="#line_70" onclick="switchLine('line_70')">
+                                70</a>
+                            </td>
+                            <td align="center">
+                                <a href="#line_70" onclick="switchLine('line_70'); new Effect.Highlight('line_70-70', {duration: 1.5}); return false">
+                                70</a>
+                            </td>
+                            <td>
+                                <a href="#line_70" onclick="switchLine('line_70'); new Effect.Highlight('line_70-70', {duration: 1.5}); return false">
+                                Variable &quot;pad_up&quot; is not in valid camel caps format</a>
                             </td>
                             <td>
                                 Checkstyle                            </td>
@@ -2422,15 +2382,15 @@
                         
                         <tr class="PMD">
                             <td align="center">
-                                <a href="#line_21" onclick="switchLine('line_21')">
-                                21</a>
+                                <a href="#line_22" onclick="switchLine('line_22')">
+                                22</a>
                             </td>
                             <td align="center">
-                                <a href="#line_81" onclick="switchLine('line_21'); new Effect.Highlight('line_21-81', {duration: 1.5}); return false">
-                                81</a>
+                                <a href="#line_84" onclick="switchLine('line_22'); new Effect.Highlight('line_22-84', {duration: 1.5}); return false">
+                                84</a>
                             </td>
                             <td>
-                                <a href="#line_21" onclick="switchLine('line_21'); new Effect.Highlight('line_21-81', {duration: 1.5}); return false">
+                                <a href="#line_22" onclick="switchLine('line_22'); new Effect.Highlight('line_22-84', {duration: 1.5}); return false">
                                 
       The method encode() has a Cyclomatic Complexity of 12. The configured cyclomatic complexity threshold is 10.
     </a>
@@ -2443,15 +2403,15 @@
                         
                         <tr class="PMD">
                             <td align="center">
-                                <a href="#line_21" onclick="switchLine('line_21')">
-                                21</a>
+                                <a href="#line_22" onclick="switchLine('line_22')">
+                                22</a>
                             </td>
                             <td align="center">
-                                <a href="#line_81" onclick="switchLine('line_21'); new Effect.Highlight('line_21-81', {duration: 1.5}); return false">
-                                81</a>
+                                <a href="#line_84" onclick="switchLine('line_22'); new Effect.Highlight('line_22-84', {duration: 1.5}); return false">
+                                84</a>
                             </td>
                             <td>
-                                <a href="#line_21" onclick="switchLine('line_21'); new Effect.Highlight('line_21-81', {duration: 1.5}); return false">
+                                <a href="#line_22" onclick="switchLine('line_22'); new Effect.Highlight('line_22-84', {duration: 1.5}); return false">
                                 
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     </a>
@@ -2464,15 +2424,15 @@
                         
                         <tr class="PMD">
                             <td align="center">
-                                <a href="#line_21" onclick="switchLine('line_21')">
-                                21</a>
+                                <a href="#line_22" onclick="switchLine('line_22')">
+                                22</a>
                             </td>
                             <td align="center">
-                                <a href="#line_21" onclick="switchLine('line_21'); new Effect.Highlight('line_21-21', {duration: 1.5}); return false">
-                                21</a>
+                                <a href="#line_22" onclick="switchLine('line_22'); new Effect.Highlight('line_22-22', {duration: 1.5}); return false">
+                                22</a>
                             </td>
                             <td>
-                                <a href="#line_21" onclick="switchLine('line_21'); new Effect.Highlight('line_21-21', {duration: 1.5}); return false">
+                                <a href="#line_22" onclick="switchLine('line_22'); new Effect.Highlight('line_22-22', {duration: 1.5}); return false">
                                 
       Avoid variables with short names like $in. Configured minimum length is 3.
     </a>
@@ -2485,15 +2445,15 @@
                         
                         <tr class="PMD">
                             <td align="center">
-                                <a href="#line_30" onclick="switchLine('line_30')">
-                                30</a>
+                                <a href="#line_32" onclick="switchLine('line_32')">
+                                32</a>
                             </td>
                             <td align="center">
-                                <a href="#line_30" onclick="switchLine('line_30'); new Effect.Highlight('line_30-30', {duration: 1.5}); return false">
-                                30</a>
+                                <a href="#line_32" onclick="switchLine('line_32'); new Effect.Highlight('line_32-32', {duration: 1.5}); return false">
+                                32</a>
                             </td>
                             <td>
-                                <a href="#line_30" onclick="switchLine('line_30'); new Effect.Highlight('line_30-30', {duration: 1.5}); return false">
+                                <a href="#line_32" onclick="switchLine('line_32'); new Effect.Highlight('line_32-32', {duration: 1.5}); return false">
                                 
       Avoid variables with short names like $i. Configured minimum length is 3.
     </a>
@@ -2506,15 +2466,15 @@
                         
                         <tr class="PMD">
                             <td align="center">
-                                <a href="#line_37" onclick="switchLine('line_37')">
-                                37</a>
+                                <a href="#line_39" onclick="switchLine('line_39')">
+                                39</a>
                             </td>
                             <td align="center">
-                                <a href="#line_37" onclick="switchLine('line_37'); new Effect.Highlight('line_37-37', {duration: 1.5}); return false">
-                                37</a>
+                                <a href="#line_39" onclick="switchLine('line_39'); new Effect.Highlight('line_39-39', {duration: 1.5}); return false">
+                                39</a>
                             </td>
                             <td>
-                                <a href="#line_37" onclick="switchLine('line_37'); new Effect.Highlight('line_37-37', {duration: 1.5}); return false">
+                                <a href="#line_39" onclick="switchLine('line_39'); new Effect.Highlight('line_39-39', {duration: 1.5}); return false">
                                 
       Avoid variables with short names like $p. Configured minimum length is 3.
     </a>
@@ -2527,15 +2487,15 @@
                         
                         <tr class="PMD">
                             <td align="center">
-                                <a href="#line_74" onclick="switchLine('line_74')">
-                                74</a>
+                                <a href="#line_76" onclick="switchLine('line_76')">
+                                76</a>
                             </td>
                             <td align="center">
-                                <a href="#line_74" onclick="switchLine('line_74'); new Effect.Highlight('line_74-74', {duration: 1.5}); return false">
-                                74</a>
+                                <a href="#line_76" onclick="switchLine('line_76'); new Effect.Highlight('line_76-76', {duration: 1.5}); return false">
+                                76</a>
                             </td>
                             <td>
-                                <a href="#line_74" onclick="switchLine('line_74'); new Effect.Highlight('line_74-74', {duration: 1.5}); return false">
+                                <a href="#line_76" onclick="switchLine('line_76'); new Effect.Highlight('line_76-76', {duration: 1.5}); return false">
                                 
       Avoid variables with short names like $a. Configured minimum length is 3.
     </a>
@@ -2548,15 +2508,15 @@
                         
                         <tr class="PMD">
                             <td align="center">
-                                <a href="#line_21" onclick="switchLine('line_21')">
-                                21</a>
+                                <a href="#line_22" onclick="switchLine('line_22')">
+                                22</a>
                             </td>
                             <td align="center">
-                                <a href="#line_81" onclick="switchLine('line_21'); new Effect.Highlight('line_21-81', {duration: 1.5}); return false">
-                                81</a>
+                                <a href="#line_84" onclick="switchLine('line_22'); new Effect.Highlight('line_22-84', {duration: 1.5}); return false">
+                                84</a>
                             </td>
                             <td>
-                                <a href="#line_21" onclick="switchLine('line_21'); new Effect.Highlight('line_21-81', {duration: 1.5}); return false">
+                                <a href="#line_22" onclick="switchLine('line_22'); new Effect.Highlight('line_22-84', {duration: 1.5}); return false">
                                 
       The method encode() has a Cyclomatic Complexity of 12. The configured cyclomatic complexity threshold is 10.
     </a>
@@ -2569,15 +2529,15 @@
                         
                         <tr class="PMD">
                             <td align="center">
-                                <a href="#line_21" onclick="switchLine('line_21')">
-                                21</a>
+                                <a href="#line_22" onclick="switchLine('line_22')">
+                                22</a>
                             </td>
                             <td align="center">
-                                <a href="#line_81" onclick="switchLine('line_21'); new Effect.Highlight('line_21-81', {duration: 1.5}); return false">
-                                81</a>
+                                <a href="#line_84" onclick="switchLine('line_22'); new Effect.Highlight('line_22-84', {duration: 1.5}); return false">
+                                84</a>
                             </td>
                             <td>
-                                <a href="#line_21" onclick="switchLine('line_21'); new Effect.Highlight('line_21-81', {duration: 1.5}); return false">
+                                <a href="#line_22" onclick="switchLine('line_22'); new Effect.Highlight('line_22-84', {duration: 1.5}); return false">
                                 
       The method encode() has an NPath complexity of 252. The configured NPath complexity threshold is 200.
     </a>
@@ -2590,15 +2550,15 @@
                         
                         <tr class="PMD">
                             <td align="center">
-                                <a href="#line_21" onclick="switchLine('line_21')">
-                                21</a>
+                                <a href="#line_22" onclick="switchLine('line_22')">
+                                22</a>
                             </td>
                             <td align="center">
-                                <a href="#line_21" onclick="switchLine('line_21'); new Effect.Highlight('line_21-21', {duration: 1.5}); return false">
-                                21</a>
+                                <a href="#line_22" onclick="switchLine('line_22'); new Effect.Highlight('line_22-22', {duration: 1.5}); return false">
+                                22</a>
                             </td>
                             <td>
-                                <a href="#line_21" onclick="switchLine('line_21'); new Effect.Highlight('line_21-21', {duration: 1.5}); return false">
+                                <a href="#line_22" onclick="switchLine('line_22'); new Effect.Highlight('line_22-22', {duration: 1.5}); return false">
                                 
       Avoid variables with short names like $in. Configured minimum length is 3.
     </a>
@@ -2611,15 +2571,15 @@
                         
                         <tr class="PMD">
                             <td align="center">
-                                <a href="#line_30" onclick="switchLine('line_30')">
-                                30</a>
+                                <a href="#line_32" onclick="switchLine('line_32')">
+                                32</a>
                             </td>
                             <td align="center">
-                                <a href="#line_30" onclick="switchLine('line_30'); new Effect.Highlight('line_30-30', {duration: 1.5}); return false">
-                                30</a>
+                                <a href="#line_32" onclick="switchLine('line_32'); new Effect.Highlight('line_32-32', {duration: 1.5}); return false">
+                                32</a>
                             </td>
                             <td>
-                                <a href="#line_30" onclick="switchLine('line_30'); new Effect.Highlight('line_30-30', {duration: 1.5}); return false">
+                                <a href="#line_32" onclick="switchLine('line_32'); new Effect.Highlight('line_32-32', {duration: 1.5}); return false">
                                 
       Avoid variables with short names like $i. Configured minimum length is 3.
     </a>
@@ -2632,15 +2592,15 @@
                         
                         <tr class="PMD">
                             <td align="center">
-                                <a href="#line_37" onclick="switchLine('line_37')">
-                                37</a>
+                                <a href="#line_39" onclick="switchLine('line_39')">
+                                39</a>
                             </td>
                             <td align="center">
-                                <a href="#line_37" onclick="switchLine('line_37'); new Effect.Highlight('line_37-37', {duration: 1.5}); return false">
-                                37</a>
+                                <a href="#line_39" onclick="switchLine('line_39'); new Effect.Highlight('line_39-39', {duration: 1.5}); return false">
+                                39</a>
                             </td>
                             <td>
-                                <a href="#line_37" onclick="switchLine('line_37'); new Effect.Highlight('line_37-37', {duration: 1.5}); return false">
+                                <a href="#line_39" onclick="switchLine('line_39'); new Effect.Highlight('line_39-39', {duration: 1.5}); return false">
                                 
       Avoid variables with short names like $p. Configured minimum length is 3.
     </a>
@@ -2653,15 +2613,15 @@
                         
                         <tr class="PMD">
                             <td align="center">
-                                <a href="#line_74" onclick="switchLine('line_74')">
-                                74</a>
+                                <a href="#line_76" onclick="switchLine('line_76')">
+                                76</a>
                             </td>
                             <td align="center">
-                                <a href="#line_74" onclick="switchLine('line_74'); new Effect.Highlight('line_74-74', {duration: 1.5}); return false">
-                                74</a>
+                                <a href="#line_76" onclick="switchLine('line_76'); new Effect.Highlight('line_76-76', {duration: 1.5}); return false">
+                                76</a>
                             </td>
                             <td>
-                                <a href="#line_74" onclick="switchLine('line_74'); new Effect.Highlight('line_74-74', {duration: 1.5}); return false">
+                                <a href="#line_76" onclick="switchLine('line_76'); new Effect.Highlight('line_76-76', {duration: 1.5}); return false">
                                 
       Avoid variables with short names like $a. Configured minimum length is 3.
     </a>

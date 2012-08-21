@@ -58,7 +58,7 @@
         <D>0.16666666666667</D>
       </Stats>
       <ConcreteClasses>
-        <Class sourceFile="/home/hio/www/Custom/lib/Custom/HttpRequest/Request.php">Request</Class>
+        <Class sourceFile="/home/hio/www/Custom/lib/Custom/HttpRequest/HttpRequest.php">HttpRequest</Class>
       </ConcreteClasses>
       <AbstractClasses>
         <Class sourceFile="/home/hio/www/Custom/lib/Custom/HttpRequest/BaseRequest.php">BaseRequest</Class>
