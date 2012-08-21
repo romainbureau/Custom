@@ -4,7 +4,7 @@ namespace Custom\HttpRequest;
 
 use Custom\HttpRequest\Auth\AuthInterface;
 
-class Request
+class HttpRequest
 {
     public function __construct(ProviderInterface $request, AuthInterface $auth = null)
     {
