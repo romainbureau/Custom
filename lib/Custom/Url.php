@@ -2,9 +2,10 @@
 
 namespace Custom;
 
-final class Url {
-
-  static public function Slugify($str) {
+final class Url
+{
+  public static function Slugify($str)
+  {
     $str = html_entity_decode($str, ENT_QUOTES, 'UTF-8');
     $slug = preg_replace('~[^\\pL\d]+~u', '-', $str);
     $slug = trim($slug, '-');
@@ -13,6 +14,7 @@ final class Url {
     }
     $slug = strtolower($slug);
     $slug = preg_replace('~[^-\w]+~', '', $slug);
+
     return $slug;
   }
 }

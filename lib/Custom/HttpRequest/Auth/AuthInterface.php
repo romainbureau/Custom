@@ -4,6 +4,7 @@ namespace Custom\HttpRequest\Auth;
 
 use Custom\HttpRequest\ProviderInterface;
 
-interface AuthInterface {
+interface AuthInterface
+{
     public function set(ProviderInterface $request);
 }

@@ -17,8 +17,10 @@ namespace Custom;
  * fragmer[at]mail[dot]ru
  * see: http://nl3.php.net/manual/en/function.base-convert.php#52450
  **/
-final class AlphaId {
-    static public function encode($in, $to_num = false, $pad_up = false, $passKey = null) {
+final class AlphaId
+{
+    public static function encode($in, $to_num = false, $pad_up = false, $passKey = null)
+    {
         $index = "abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         if ($passKey !== null) {
             // Although this function's purpose is to just make the
@@ -60,7 +62,7 @@ final class AlphaId {
             }
             $out = sprintf('%F', $out);
             $out = substr($out, 0, strpos($out, '.'));
-        } else { 
+        } else {
             // Digital number  -->>  alphabet letter code
             if (is_numeric($pad_up)) {
                 $pad_up--;
@@ -77,6 +79,7 @@ final class AlphaId {
             }
             $out = strrev($out); // reverse
         }
+
         return $out;
     }
 }

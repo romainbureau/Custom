@@ -5,12 +5,13 @@ namespace Custom\HttpRequest\Provider;
 use Custom\HttpRequest\BaseRequest;
 use Custom\HttpRequest\ProviderInterface;
 
-class Curl extends BaseRequest implements ProviderInterface {
-
-    static private $_curl;
+class Curl extends BaseRequest implements ProviderInterface
+{
+    private static $_curl;
     private $options = array();
 
-    public function setOptions() {
+    public function setOptions()
+    {
         $options = array(
             CURLOPT_HEADER => false,
             CURLOPT_RETURNTRANSFER => true,
@@ -21,7 +22,7 @@ class Curl extends BaseRequest implements ProviderInterface {
             CURLOPT_SSL_VERIFYHOST => false,
         );
 
-        switch($this->_method) {
+        switch ($this->_method) {
         case 'GET':
             break;
         case 'POST':
@@ -29,25 +30,27 @@ class Curl extends BaseRequest implements ProviderInterface {
             $options[CURLOPT_POSTFIELDS] = $this->_data;
             break;
         case 'PUT':
-            $options[CURLOPT_CUSTOMREQUEST] = 'PUT'; 
+            $options[CURLOPT_CUSTOMREQUEST] = 'PUT';
             $options[CURLOPT_POSTFIELDS] = $this->_data;
             break;
         case 'DELETE':
-            $options[CURLOPT_CUSTOMREQUEST] = 'DELETE'; 
+            $options[CURLOPT_CUSTOMREQUEST] = 'DELETE';
             break;
         }
 
         $this->_options = $options;
     }
 
-    public function before() {
-        self::$_curl = curl_init(); 
+    public function before()
+    {
+        self::$_curl = curl_init();
         $this->setOptions();
     }
 
-    public function run() {
+    public function run()
+    {
         $headers = array();
-        foreach($this->_headers as $header => $value) {
+        foreach ($this->_headers as $header => $value) {
             $headers[] = $header.': '.$value;
         }
 
@@ -58,7 +61,8 @@ class Curl extends BaseRequest implements ProviderInterface {
         $this->_result = curl_exec(self::$_curl);
     }
 
-    public function after() {
+    public function after()
+    {
         curl_close(self::$_curl);
     }
 

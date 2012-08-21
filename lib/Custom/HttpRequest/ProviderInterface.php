@@ -2,7 +2,8 @@
 
 namespace Custom\HttpRequest;
 
-interface ProviderInterface {
+interface ProviderInterface
+{
     public function setUrl($url);
     public function getUrl();
     public function setAuth($auth);

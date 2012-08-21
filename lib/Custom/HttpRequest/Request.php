@@ -4,33 +4,39 @@ namespace Custom\HttpRequest;
 
 use Custom\HttpRequest\Auth\AuthInterface;
 
-class Request {
-
-    public function __construct(ProviderInterface $request, AuthInterface $auth = null) {
+class Request
+{
+    public function __construct(ProviderInterface $request, AuthInterface $auth = null)
+    {
         $this->_request = $request;
         $this->_auth = $auth;
     }
 
-    public function setUrl($url) {
+    public function setUrl($url)
+    {
         $this->_request->setUrl($url);
     }
 
-    public function setHeaders(array $headers = array()) {
+    public function setHeaders(array $headers = array())
+    {
         $this->_request->setHeaders($headers);
     }
 
-    public function setMethod($method) {
+    public function setMethod($method)
+    {
         $this->_request->setMethod($method);
     }
 
-    public function setData($data) {
+    public function setData($data)
+    {
         $this->_request->setData($data);
     }
 
-    public function request() {
+    public function request()
+    {
         $this->_request->before();
 
-        if($this->_auth) {
+        if ($this->_auth) {
             $this->_auth->set($this->_request);
         }
 
@@ -38,11 +44,13 @@ class Request {
         $this->_request->after();
     }
 
-    public function getResult() {
+    public function getResult()
+    {
         return $this->_request->getResult();
     }
 
-    public function __toString() {
+    public function __toString()
+    {
         var_dump($this);
     }
-} 
+}
